@@ -1,0 +1,201 @@
+.post {
+  .insta-page {
+    height: 930px;
+    width: 680px;
+    margin-left: 20px;
+    padding: 0;
+    display: grid;
+    background: white;
+    border: 1px solid #e4e4e4;
+    grid-template-rows: 0.48fr 5fr 1.4fr;
+    .header {
+      padding: 12px;
+      height: 38px;
+
+      img {
+        padding: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        margin: 0;
+        float: left;
+        border: 2px solid red;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 0;
+          padding: 0;
+          p {
+            margin: 0;
+            padding: 9px 0 0 10px;
+            float: left;
+            width: 200px;
+            height: 20px;
+            font-size: 16px;
+            font-family: 'roboto';
+            font-weight: 600;
+          }
+          i {
+            margin: 11px 4px 0 0;
+            padding: 0;
+            float: right;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .img {
+      border: 0;
+      margin: 0;
+      padding: 0;
+
+      img {
+        width: 681px;
+        height: 630px;
+      }
+    }
+    .icon {
+      margin: 0;
+      padding: 12px 0 0 0;
+      h6 {
+        margin: 24px 0 0 15px;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: 'ubuntu';
+      }
+      h5 {
+        margin: 10px 0 0 15px;
+        font-size: 14px;
+        font-weight: 800;
+        font-family: 'ubuntu';
+        letter-spacing: normal;
+        span {
+          font-weight: normal;
+          margin-left: 10px;
+          font-family: 'roboto';
+        }
+        i {
+          float: right;
+          font-size: 12px;
+          margin: 0 16px;
+        }
+      }
+      h3 {
+        margin: 2px 0 0 15px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'ubuntu';
+        letter-spacing: normal;
+        span {
+          font-weight: normal;
+          margin-left: 10px;
+          font-family: 'roboto';
+        }
+      }
+
+      h4 {
+        margin: 2px 0 0 15px;
+        font-size: 15px;
+        font-weight: normal;
+        opacity: 0.4;
+        font-family: 'roboto';
+      }
+      p {
+        margin: 0 0 0 15px;
+        font-size: 12px;
+        font-weight: normal;
+        text-transform: uppercase;
+        opacity: 0.4;
+        font-family: 'open sans';
+      }
+
+      input {
+        margin: 30px 0 0 0;
+        padding-left: 20px;
+        width: 560px;
+        height: 62px;
+        border-top: 1px solid #e9e9e9;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        outline: none;
+        font-size: 20px;
+      }
+      input::placeholder {
+        font-size: 16px;
+      }
+
+      .like {
+        margin: 0 0 0 15px;
+        padding: 0;
+        font-size: 16px;
+        font-weight: normal;
+        float: left;
+        #i2 {
+          color: red;
+        }
+      }
+      .comment {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        font-size: 16px;
+
+        margin: 0 8px 0 9px;
+        float: left;
+
+        textarea {
+          // margin: 0;
+          // margin-top: 25px;
+          // width: 140px;
+          // height: 40px;
+          // border-radius: 12px;
+          // outline: none;
+          // padding-left: 15px;
+
+          margin: 136px 0 0 0;
+
+          width: 520px;
+          height: 60px;
+          border-top: 1px solid #e9e9e9;
+          border-right: none;
+          border-left: none;
+          border-bottom: none;
+          outline: none;
+        }
+        textarea::placeholder {
+          margin: 0;
+          font-size: 14px;
+          text-transform: capitalize;
+        }
+      }
+      .share {
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        height: 20px;
+        float: left;
+        font-size: 16px;
+        #sicons {
+          margin: 6px 0 0 20px;
+        }
+      }
+      .save {
+        margin: 0 18px;
+        padding: 0;
+        font-size: 16px;
+        font-weight: normal;
+        float: right;
+        #i2 {
+          color: black;
+        }
+      }
+    }
+  }
+}
