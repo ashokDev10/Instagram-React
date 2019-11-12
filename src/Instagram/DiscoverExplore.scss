@@ -1,0 +1,50 @@
+.discover-explore-page {
+  width: 1040px;
+  height: 600px;
+  margin: auto;
+  background: lightcoral;
+  .discover-page {
+    height: 400px;
+    margin: auto;
+    background: rgb(141, 140, 143);
+    p {
+      span {
+        float: right;
+      }
+    }
+    .discover-block {
+      .discover-post {
+        height: 220px;
+        width: 200px;
+        background: lightgoldenrodyellow;
+        text-align: center;
+        img {
+          padding: 0;
+          height: 46px;
+          width: 46px;
+          border-radius: 50%;
+          margin: 0;
+        }
+        h5 {
+          font-size: 16px;
+          margin: 0;
+          font-family: 'Days One', sans-serif;
+        }
+        p {
+          margin: 0;
+          font-size: 12px;
+          font-weight: normal;
+          opacity: 0.4;
+          font-family: 'poppins', sans-serif;
+        }
+        button {
+          margin: 0;
+          font-size: 12px;
+          text-transform: capitalize;
+          font-family: 'poppins', sans-serif;
+          color: rgba(var(--h5f, 56, 151, 240), 1);
+        }
+      }
+    }
+  }
+}

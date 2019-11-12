@@ -3,6 +3,7 @@ import './Instagram.scss';
 import Post from './Post';
 import Footer from './Footer';
 import StoryPost from './StoryPost';
+import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
 import pro from './images/pro.png';
 
@@ -58,6 +59,7 @@ class Instagram extends Component {
     return (
       <div className="instagram">
         <HomePage />
+        <DiscoverExplore />
       </div>
     );
   }
