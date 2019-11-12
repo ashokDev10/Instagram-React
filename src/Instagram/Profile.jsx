@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import './Profile.scss';
 import pro1 from './images/p1.jpeg';
+import pro2 from './images/p2.jpeg';
+import pro3 from './images/p3.jpeg';
+import pro4 from './images/p4.jpeg';
+import pro5 from './images/p5.jpeg';
+import pro6 from './images/p6.jpeg';
+import pro7 from './images/p7.jpeg';
+import pro8 from './images/p8.jpeg';
+import pro9 from './images/p9.jpeg';
+import pro10 from './images/p10.jpeg';
 
 class ProfileBlock extends Component {
   render() {
@@ -39,7 +48,23 @@ class HighlightBlock extends Component {
   render() {
     return (
       <div className="highlight-block">
-        <p>1</p>
+        <HighlightPost image={pro2} text="TRAVELLER" />
+        <HighlightPost image={pro3} text="TAMILAN" />
+        <HighlightPost image={pro4} text="BIKE LOVE" />
+        <HighlightPost image={pro5} text="RIDING LOVE" />
+      </div>
+    );
+  }
+}
+class HighlightPost extends Component {
+  render() {
+    const { image, text } = this.props;
+    return (
+      <div className="highlight-post">
+        <div>
+          <img src={image} alt="" />
+        </div>
+        <p>{text}</p>
       </div>
     );
   }

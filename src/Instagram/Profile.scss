@@ -5,7 +5,6 @@
   background: deeppink;
   .profile-block {
     height: 350px;
-    background: rgb(182, 180, 180);
     display: grid;
     grid-template-columns: 1.1fr 2fr;
     .p-left {
@@ -20,8 +19,6 @@
       }
     }
     .p-right {
-      background: rgb(86, 173, 151);
-
       h3 {
         font-size: 28px;
         font-family: 'roboto';
@@ -76,6 +73,37 @@
         font-size: 18px;
         line-height: 1.5;
         font-family: 'roboto', sans-serif;
+      }
+    }
+  }
+  .highlight-block {
+    height: 200px;
+    background: cornflowerblue;
+    .highlight-post {
+      float: left;
+      padding: 40px 30px;
+
+      div {
+        height: 96px;
+        width: 96px;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        margin: 0;
+        border: 2px solid rgb(211, 211, 211);
+        img {
+          padding: 0;
+          margin: 4px 0 0 4px;
+          height: 88px;
+          width: 88px;
+          border-radius: 50%;
+        }
+      }
+      p {
+        margin: 10px 0;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: normal;
+        font-family: 'Ramabhadra', sans-serif;
       }
     }
   }
