@@ -6,6 +6,15 @@ import StoryPost from './StoryPost';
 import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
 import pro from './images/pro.png';
+// import { Link } from 'react-router-dom';
+
+// const IconNavi = ({ text }) => (
+//   <div className="butnavi">
+//     <Link to={text === 'Get gift for head' ? '/coin/HGift' : '/coin/TGift'}>
+//       <p>{text}</p>
+//     </Link>
+//   </div>
+// );
 
 class HomePage extends Component {
   render() {
@@ -59,7 +68,6 @@ class Instagram extends Component {
     return (
       <div className="instagram">
         <HomePage />
-        <DiscoverExplore />
       </div>
     );
   }
