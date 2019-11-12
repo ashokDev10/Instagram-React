@@ -1,6 +1,6 @@
 .profile-page {
   width: 1050px;
-  height: 1000px;
+  height: 3000px;
   margin: auto;
   background: deeppink;
   .profile-block {
@@ -104,6 +104,35 @@
         font-size: 20px;
         letter-spacing: normal;
         font-family: 'Ramabhadra', sans-serif;
+      }
+    }
+  }
+  .post-block {
+    height: 1500px;
+    background: chartreuse;
+    float: left;
+
+    .profile-post-head {
+      height: 40px;
+      padding: 0 200px;
+      ul {
+        list-style-type: none;
+
+        li {
+          margin: 0 25px;
+          float: left;
+          font-size: 16px;
+          font-family: 'NTR', sans-serif;
+          font-weight: bolder;
+          text-transform: uppercase;
+          span {
+            opacity: 0.4;
+          }
+          i {
+            font-size: 16px;
+            margin: 0 10px 0 0;
+          }
+        }
       }
     }
   }

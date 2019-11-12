@@ -10,6 +10,7 @@ import pro7 from './images/p7.jpeg';
 import pro8 from './images/p8.jpeg';
 import pro9 from './images/p9.jpeg';
 import pro10 from './images/p10.jpeg';
+import Post from './ExplorePost';
 
 class DiscoverPeople extends Component {
   render() {
@@ -104,30 +105,7 @@ class ExplorePage extends Component {
     return (
       <div className="explore-page">
         <p>Explore</p>
-        <div className="explore-post">
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-          <ExplorePost image="https://placeimg.com/400/500/random" />
-        </div>
-      </div>
-    );
-  }
-}
-class ExplorePost extends Component {
-  render() {
-    const { image } = this.props;
-    return (
-      <div className="explore-image">
-        <img src={image} alt="" />
+        <Post />
       </div>
     );
   }
