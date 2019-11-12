@@ -16,7 +16,7 @@ class DiscoverPeople extends Component {
     return (
       <div className="discover-page">
         <p>
-          Discover People <span>See All</span>
+          <span id="t1">Discover People</span> <span id="t2">See All</span>
         </p>
         <div className="discover-block">
           <DiscoverBlock
@@ -25,13 +25,13 @@ class DiscoverPeople extends Component {
             text="Suggested for you"
             follow="follow"
           />
-          {/* <DiscoverBlock
+          <DiscoverBlock
             image={pro2}
             userName="chaalpritam"
             text="Suggested for you"
             follow="follow"
-          /> */}
-          {/* <DiscoverBlock
+          />
+          <DiscoverBlock
             image={pro3}
             userName="elon_musk "
             text="Suggested for you"
@@ -78,7 +78,7 @@ class DiscoverPeople extends Component {
             userName="purushoth"
             text="Suggested for you"
             follow="follow"
-          /> */}
+          />
         </div>
       </div>
     );
@@ -103,7 +103,31 @@ class ExplorePage extends Component {
   render() {
     return (
       <div className="explore-page">
-        <p>1</p>
+        <p>Explore</p>
+        <div className="explore-post">
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+          <ExplorePost image="https://placeimg.com/400/500/random" />
+        </div>
+      </div>
+    );
+  }
+}
+class ExplorePost extends Component {
+  render() {
+    const { image } = this.props;
+    return (
+      <div className="explore-image">
+        <img src={image} alt="" />
       </div>
     );
   }
