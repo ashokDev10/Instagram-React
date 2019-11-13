@@ -1,5 +1,5 @@
 .profile-page {
-  width: 1050px;
+  width: 1040px;
   height: 3000px;
   margin: auto;
   background: deeppink;
@@ -21,7 +21,7 @@
     .p-right {
       h3 {
         font-size: 28px;
-        font-family: 'roboto';
+        font-family: "roboto";
         font-weight: normal;
         margin: 58px 0 0 0;
       }
@@ -39,7 +39,7 @@
           font-size: 16px;
           vertical-align: middle;
           font-weight: 600;
-          font-family: 'lato', sans-serif;
+          font-family: "lato", sans-serif;
         }
       }
       i {
@@ -53,26 +53,26 @@
           font-weight: bold;
           font-size: 18px;
           margin: 0 4px 0 0;
-          font-family: 'rubik', sans-serif;
+          font-family: "rubik", sans-serif;
         }
         small {
           margin: 0 40px 0 0;
           font-weight: normal;
           font-size: 22px;
           letter-spacing: normal;
-          font-family: 'rubik', sans-serif;
+          font-family: "rubik", sans-serif;
         }
       }
       h4 {
         margin: 24px 0 4px 0;
         font-size: 20px;
-        font-family: 'roboto', sans-serif;
+        font-family: "roboto", sans-serif;
       }
       #txt2 {
         margin: 0;
         font-size: 18px;
         line-height: 1.5;
-        font-family: 'roboto', sans-serif;
+        font-family: "roboto", sans-serif;
       }
     }
   }
@@ -103,13 +103,13 @@
         font-weight: normal;
         font-size: 20px;
         letter-spacing: normal;
-        font-family: 'Ramabhadra', sans-serif;
+        font-family: "Ramabhadra", sans-serif;
       }
     }
   }
   .post-block {
-    height: 1500px;
-    background: chartreuse;
+    width: 100%;
+    background: yellowgreen;
     float: left;
 
     .profile-post-head {
@@ -122,7 +122,7 @@
           margin: 0 25px;
           float: left;
           font-size: 16px;
-          font-family: 'NTR', sans-serif;
+          font-family: "NTR", sans-serif;
           font-weight: bolder;
           text-transform: uppercase;
           span {

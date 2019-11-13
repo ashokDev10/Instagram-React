@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './ExplorePost.scss';
+import React, { Component } from "react";
+import "./ExplorePost.scss";
 
 class Post extends Component {
   render() {
@@ -28,6 +28,10 @@ class ExplorePost extends Component {
     return (
       <div className="explore-image">
         <img src={image} alt="" />
+        <p className="post-icons">
+          <i className="fa fa-heart" />
+          <i className="fa fa-comment" />
+        </p>
       </div>
     );
   }
