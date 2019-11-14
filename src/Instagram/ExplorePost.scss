@@ -1,63 +1,22 @@
 .explore-post {
-  height: 1000px;
+  height: 2200px;
+  width: 1040px;
 
-  float: left;
-  display: grid;
-  grid-gap: 28px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  .explore-image {
-    width: 100%;
-    .container {
-      position: relative;
+  .explore-post-block {
+    height: 2200px;
+    width: 1040px;
 
-      .image {
-        display: block;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .explore-image-block {
+      height: 100%;
+      img {
         width: 100%;
-        height: auto;
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: 0.5s ease;
-        background-color: #00000000;
-        .post-icons {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          span {
-            margin: 0 10px;
-            font-size: 16px;
-            font-family: "roboto";
-          }
-        }
+        height: 343px;
       }
     }
-    .container:hover .overlay {
-      opacity: 1;
-      color: white;
-    }
-    .container:hover .overlay p {
-      opacity: 1;
-      color: white;
-    }
-  }
-  .explore-image:hover {
-    cursor: pointer;
-    opacity: 0.3;
-  }
-  .post-icons {
-    margin: 0;
-    font-size: 20px;
-    color: white;
   }
 }
