@@ -6,6 +6,7 @@ import StoryPost from './StoryPost';
 // import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
 import pro from './images/pro.png';
+import title from './images2/title.png';
 // import { Link } from 'react-router-dom';
 
 // const IconNavi = ({ text }) => (
@@ -26,7 +27,7 @@ class HomePage extends Component {
               <div>
                 <i className="fa fa-instagram" />
               </div>
-              <p>Instagram</p>
+              <img src={title} alt="" />
             </div>
             <div className="search-box">
               <input type="text" placeholder="Search" />

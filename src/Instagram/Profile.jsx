@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Profile.scss';
 
 import Post from './ExplorePost';
+
 import pro1 from './images/p1.jpeg';
 import pro2 from './images/p2.jpeg';
 import pro3 from './images/p3.jpeg';
@@ -72,7 +73,7 @@ class PostBlock extends Component {
       <div className="post-block">
         <div className="profile-post-head">
           <ul>
-            <li>
+            <li id="post">
               <i class="fas fa-th"></i>
               posts
             </li>
