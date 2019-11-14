@@ -1,17 +1,18 @@
-import React from 'react';
-import './App.scss';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import Instagram from './Instagram/Instagram';
-import DiscoverExplore from './Instagram/DiscoverExplore';
-import Profile from './Instagram/Profile';
-import EditProfile from './Instagram/EditProfile';
+import React from "react";
+import "./App.scss";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import Instagram from "./Instagram/Instagram";
+import DiscoverExplore from "./Instagram/DiscoverExplore";
+import Profile from "./Instagram/Profile";
+import EditProfile from "./Instagram/EditProfile";
+import IGTV from "./Instagram/IGTV";
 
-const menu = ['insta', 'discover-explore', 'profile', 'EditProfile'];
+const menu = ["insta", "discover-explore", "profile", "EditProfile", "IGTV"];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
       {menus.map(m => (
-        <Link to={m === 'insta' ? '/' : `/${m}`}>
+        <Link to={m === "insta" ? "/" : `/${m}`}>
           <li>{m}</li>
         </Link>
       ))}
@@ -30,6 +31,7 @@ class App extends React.Component {
             <Route exact path="/discover-explore" component={DiscoverExplore} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/EditProfile" component={EditProfile} />
+            <Route exact path="/IGTV" component={IGTV} />
           </Switch>
         </BrowserRouter>
       </div>

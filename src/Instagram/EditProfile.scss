@@ -1,8 +1,10 @@
 .edit-profile-page {
-  height: 1000px;
-  width: 1030px;
+  height: 860px;
+  width: 1150px;
   margin: auto;
   .edit-profile-block {
+    width: 1030px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1.1fr 3fr;
     border: 1px solid rgb(233, 233, 233);
@@ -172,6 +174,34 @@
           letter-spacing: 0.5px;
           margin: 56px 0 0 160px;
         }
+      }
+    }
+  }
+  .instagram-all-footer {
+    height: 30px;
+    width: 1150px;
+    margin: 50px auto;
+    ul {
+      padding: 0;
+
+      list-style-type: none;
+      text-transform: uppercase;
+      li {
+        font-size: 12px;
+        margin: 0 20px 0 0;
+        font-family: "poppins";
+        float: left;
+        color: blue;
+        font-weight: bolder;
+      }
+      span {
+        float: right;
+        font-size: 14px;
+        margin: 0;
+        font-family: "poppins";
+        color: black;
+        opacity: 0.5;
+        font-weight: bolder;
       }
     }
   }
