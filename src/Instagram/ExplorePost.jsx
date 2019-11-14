@@ -27,11 +27,17 @@ class ExplorePost extends Component {
     const { image } = this.props;
     return (
       <div className="explore-image">
-        <img src={image} alt="" />
-        <p className="post-icons">
-          <i className="fa fa-heart" />
-          <i className="fa fa-comment" />
-        </p>
+        <div className="container">
+          <img src={image} alt="" className="image" />
+          <div className="overlay">
+            <p className="post-icons">
+              <i className="fa fa-heart" />
+              <span>23</span>
+              <i className="fa fa-comment" />
+              <span>4</span>
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
