@@ -7,8 +7,6 @@ import apple from './LogImage/apple.png';
 import android from './LogImage/android.png';
 import title from './images2/title.png';
 
-
-
 class Login extends Component {
   render() {
     return (

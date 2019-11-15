@@ -48,8 +48,16 @@ class ExplorePost extends Component {
   render() {
     const { image } = this.props;
     return (
-      <div className="explore-image-block">
-        <img src={image} alt="" />
+      <div className="container">
+        <img src={image} alt="" className="image" />
+        <div class="middle">
+          <div class="text">
+            <i className="fa fa-heart" />
+            <span>23</span>
+            <i className="fa fa-comment" />
+            <span>4</span>
+          </div>
+        </div>
         {/* <div className="container">
           <img src={image} alt="" />
           <div className="overlay">
