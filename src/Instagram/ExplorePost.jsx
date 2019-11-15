@@ -15,7 +15,6 @@ import pic12 from './images2/12.jpg';
 import pic13 from './images2/13.jpg';
 import pic14 from './images2/14.jpg';
 import pic15 from './images2/15.jpg';
-import pic16 from './images2/16.jpg';
 
 class Post extends Component {
   render() {
@@ -37,7 +36,6 @@ class Post extends Component {
           <ExplorePost image={pic13} />
           <ExplorePost image={pic14} />
           <ExplorePost image={pic15} />
-          <ExplorePost image={pic16} />
         </div>
       </div>
     );

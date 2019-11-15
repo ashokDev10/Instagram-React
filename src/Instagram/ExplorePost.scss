@@ -1,16 +1,15 @@
 .explore-post {
-  height: 2200px;
   width: 1040px;
-
+  height: 1920px;
   .explore-post-block {
-    height: 2200px;
+    height: 1830px;
     width: 1040px;
 
     display: grid;
     grid-column-gap: 30px;
     grid-row-gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     .container {
       background: black;
       position: relative;

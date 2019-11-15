@@ -11,6 +11,7 @@ import pro8 from './images/p8.jpeg';
 import pro9 from './images/p9.jpeg';
 import pro10 from './images/p10.jpeg';
 import Post from './ExplorePost';
+import InstaHead from './InstaHead';
 
 class DiscoverPeople extends Component {
   render() {
@@ -114,9 +115,12 @@ class ExplorePage extends Component {
 class DiscoverExplore extends Component {
   render() {
     return (
-      <div className="discover-explore-page">
-        <DiscoverPeople />
-        <ExplorePage />
+      <div>
+        <InstaHead />
+        <div className="discover-explore-page">
+          <DiscoverPeople />
+          <ExplorePage />
+        </div>
       </div>
     );
   }

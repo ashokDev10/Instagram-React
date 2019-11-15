@@ -8,25 +8,25 @@ import EditProfile from './Instagram/EditProfile';
 import IGTV from './Instagram/IGTV';
 import Login from './Instagram/Login';
 
-const menu = ['login'];
-const Navigation = ({ menus }) => (
-  <div className="navigation">
-    <ul>
-      {menus.map(m => (
-        <Link to={m === 'login' ? '/' : `/${m}`}>
-          <li>{m}</li>
-        </Link>
-      ))}
-    </ul>
-  </div>
-);
+// const menu = ['login'];
+// const Navigation = ({ menus }) => (
+//   <div className="navigation">
+//     <ul>
+//       {menus.map(m => (
+//         <Link to={m === 'login' ? '/' : `/${m}`}>
+//           <li>{m}</li>
+//         </Link>
+//       ))}
+//     </ul>
+//   </div>
+// );
 
 class App extends React.Component {
   render() {
     return (
       <div className="app">
         <BrowserRouter>
-          <Navigation menus={menu} />
+          {/* <Navigation menus={menu} /> */}
           <Switch>
             <Route exact path="/" component={Login} />
             <Route exact path="/insta" component={Instagram} />

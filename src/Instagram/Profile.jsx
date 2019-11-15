@@ -4,7 +4,8 @@ import post from './comImage/post.png';
 import igtv from './comImage/igtv.png';
 import save from './comImage/save.png';
 import tag from './comImage/tag.png';
-
+import settings from './LogImage/settings.png';
+import InstaHead from './InstaHead';
 import Post from './ExplorePost';
 import { Link } from 'react-router-dom';
 import pro1 from './images/p1.jpeg';
@@ -27,7 +28,7 @@ class ProfileBlock extends Component {
               <small>Edit Profile</small>
             </Link>
           </div>
-          <i class="fas fa-cog"></i>
+          <img src={settings} alt="" />
 
           <p id="txt1">
             <span>20</span>
@@ -121,10 +122,31 @@ class PostBlock extends Component {
 class ProfilePage extends Component {
   render() {
     return (
-      <div className="profile-page">
-        <ProfileBlock />
-        <HighlightBlock />
-        <PostBlock />
+      <div>
+        <InstaHead />
+        <div className="profile-page">
+          <ProfileBlock />
+          <HighlightBlock />
+          <PostBlock />
+          
+        </div>
+        <div className="instagram-all-footer">
+            <ul>
+              <li>about us</li>
+              <li>Support</li>
+              <li>press</li>
+              <li>api</li>
+              <li>jobs</li>
+              <li>Privacy</li>
+              <li>terms</li>
+              <li>Directory</li>
+              <li>profiles</li>
+              <li>Hashtags</li>
+              <li>language</li>
+
+              <span>@ 2019 INSTAGRAM</span>
+            </ul>
+          </div>
       </div>
     );
   }
