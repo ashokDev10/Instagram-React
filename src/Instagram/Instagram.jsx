@@ -6,6 +6,9 @@ import StoryPost from './StoryPost';
 // import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
 import pro from './images/pro.png';
+import compass from './images/compass.png';
+import like from './images/like.png';
+import profile from './images/profile.png';
 import title from './images2/title.png';
 // import { Link } from 'react-router-dom';
 
@@ -34,9 +37,9 @@ class HomePage extends Component {
               <i className="fa fa-search" />
             </div>
             <div className="icons">
-              <i className="fa fa-user-o" />
-              <i className="fa fa-heart-o" />
-              <i className="fa fa-compass" />
+              <img id="i1" src={profile} alt="" />
+              <img id="i2" src={like} alt="" />
+              <img id="i3" src={compass} alt="" />
             </div>
           </div>
         </div>

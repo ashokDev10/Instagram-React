@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import comment from './comImage/comment.png';
+
 class Comment extends Component {
   state = {
     commentSelected: false
@@ -16,10 +18,15 @@ class Comment extends Component {
     return (
       <div className="comment">
         <div>
-          <i
+          <img
+            src={comment}
+            alt=""
+            onClick={() => this.changeIcon(commentSelected)}
+          />
+          {/* <i
             class="far fa-comment"
             onClick={() => this.changeIcon(commentSelected)}
-          ></i>
+          ></i> */}
         </div>
         {commentSelected ? i2 : i1}
       </div>

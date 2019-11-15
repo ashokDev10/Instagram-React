@@ -6,6 +6,8 @@ import Share from './Share';
 import Save from './Save';
 import img from './images/01.jpg';
 import dp from './images/dp.jpg';
+import like from './comImage/like.png';
+import save from './comImage/save.png';
 
 // icons
 
@@ -82,8 +84,10 @@ class Icons extends Component {
     return (
       <div className="icon">
         <Like
-          i1={<i id="i1" className="far fa-heart" />}
+          i1={<img id="i1" src={like} alt="" />}
           i2={<i id="i2" className="fas fa-heart" />}
+          // i1={<i id="i1" className="far fa-heart" />}
+          // i2={<i id="i2" className="fas fa-heart" />}
         />
         <Comment />
         <Share
@@ -93,7 +97,7 @@ class Icons extends Component {
           ))}
         />
         <Save
-          i1={<i id="i1" className="far fa-bookmark" />}
+          i1={<img id="i1" src={save} alt="" />}
           i2={<i id="i2" className="fas fa-bookmark" />}
         />
         <h6>423k likes</h6>

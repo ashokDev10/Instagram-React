@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import './Profile.scss';
+import post from './comImage/post.png';
+import igtv from './comImage/igtv.png';
+import save from './comImage/save.png';
+import tag from './comImage/tag.png';
 
 import Post from './ExplorePost';
 
@@ -73,27 +77,34 @@ class PostBlock extends Component {
       <div className="post-block">
         <div className="profile-post-head">
           <ul>
-            <li id="post">
-              <i class="fas fa-th"></i>
-              posts
+            <li id="li1">
+              <p>
+                <img src={post} alt="" /> <b>posts</b>
+              </p>
             </li>
-            <li>
-              <span>
-                <i class="fab fa-youtube"></i>
-                IGTV
-              </span>
+            <li id="li2">
+              <p>
+                <span>
+                  <img src={igtv} alt="" />
+                  IGTV
+                </span>
+              </p>
             </li>
-            <li>
-              <span>
-                <i class="far fa-bookmark"></i>
-                SAVED
-              </span>
+            <li id="li2">
+              <p>
+                <span>
+                  <img src={save} alt="" />
+                  SAVED
+                </span>
+              </p>
             </li>
-            <li>
-              <span>
-                <i class="fas fa-tags"></i>
-                tagged
-              </span>
+            <li id="li2">
+              <p>
+                <span>
+                  <img src={tag} alt="" />
+                  tagged
+                </span>
+              </p>
             </li>
           </ul>
         </div>

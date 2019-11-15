@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import share from './comImage/share.png';
 
 class Share extends Component {
   state = {
@@ -13,10 +14,15 @@ class Share extends Component {
     const { i2 } = this.props;
     return (
       <div className="share">
-        <i
+        <img
+          src={share}
+          alt=""
+          onClick={() => this.changeIcon(shareSelected)}
+        />
+        {/* <i
           class="far fa-share-square"
           onClick={() => this.changeIcon(shareSelected)}
-        ></i>
+        ></i> */}
         <div className="share-icons">{shareSelected ? i2 : ''}</div>
       </div>
     );
