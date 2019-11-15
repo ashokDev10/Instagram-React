@@ -34,7 +34,12 @@ class HomePage extends Component {
               </Link>
 
               <img id="i2" src={like} alt="" />
-              <img id="i3" src={compass} alt="" />
+              <Link
+                to="/insta/discover-explore"
+                style={{ textDecoration: 'none' }}
+              >
+                <img id="i3" src={compass} alt="" />
+              </Link>
             </div>
           </div>
         </div>

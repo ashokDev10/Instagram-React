@@ -86,10 +86,12 @@ class PostBlock extends Component {
             </li>
             <li id="li2">
               <p>
-                <span>
-                  <img src={igtv} alt="" />
-                  IGTV
-                </span>
+                <Link to="./profile/IGTV" style={{ textDecoration: 'none' }}>
+                  <span>
+                    <img src={igtv} alt="" />
+                    IGTV
+                  </span>
+                </Link>
               </p>
             </li>
             <li id="li2">

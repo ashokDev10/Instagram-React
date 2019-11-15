@@ -8,7 +8,7 @@ import EditProfile from './Instagram/EditProfile';
 import IGTV from './Instagram/IGTV';
 import Login from './Instagram/Login';
 
-const menu = ['login', 'discover-explore', 'EditProfile', 'IGTV'];
+const menu = ['login'];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
@@ -30,14 +30,18 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Login} />
             <Route exact path="/insta" component={Instagram} />
-            <Route exact path="/discover-explore" component={DiscoverExplore} />
+            <Route
+              exact
+              path="/insta/discover-explore"
+              component={DiscoverExplore}
+            />
             <Route exact path="/insta/profile" component={Profile} />
             <Route
               exact
               path="/insta/profile/EditProfile"
               component={EditProfile}
             />
-            <Route exact path="/IGTV" component={IGTV} />
+            <Route exact path="/insta/profile/IGTV" component={IGTV} />
           </Switch>
         </BrowserRouter>
       </div>
