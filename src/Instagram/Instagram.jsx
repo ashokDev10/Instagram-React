@@ -10,15 +10,9 @@ import compass from './images/compass.png';
 import like from './images/like.png';
 import profile from './images/profile.png';
 import title from './images2/title.png';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-// const IconNavi = ({ text }) => (
-//   <div className="butnavi">
-//     <Link to={text === 'Get gift for head' ? '/coin/HGift' : '/coin/TGift'}>
-//       <p>{text}</p>
-//     </Link>
-//   </div>
-// );
+
 
 class HomePage extends Component {
   render() {

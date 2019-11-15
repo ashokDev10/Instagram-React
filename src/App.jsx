@@ -8,14 +8,7 @@ import EditProfile from './Instagram/EditProfile';
 import IGTV from './Instagram/IGTV';
 import Login from './Instagram/Login';
 
-const menu = [
-  'login',
-  'insta',
-  'discover-explore',
-  'profile',
-  'EditProfile',
-  'IGTV'
-];
+const menu = ['login', 'discover-explore', 'profile', 'EditProfile', 'IGTV'];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>

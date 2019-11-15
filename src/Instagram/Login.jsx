@@ -7,16 +7,7 @@ import apple from './LogImage/apple.png';
 import android from './LogImage/android.png';
 import title from './images2/title.png';
 
-const InstaLogin = ({ text }) => (
-  <div className="insta-login">
-    <Link
-      to={text === 'Log in' ? 'sign up' : './insta'}
-      style={{ textDecoration: 'none' }}
-    >
-      <p>{text}</p>
-    </Link>
-  </div>
-);
+
 
 class Login extends Component {
   render() {
@@ -108,9 +99,9 @@ class LoginFormBlock extends Component {
         <div className="login-press">
           <p>
             Have an account?
-            <span>
-              <InstaLogin text="Log in " />
-            </span>
+            <Link to="./insta" style={{ textDecoration: 'none' }}>
+              <span>Log in </span>
+            </Link>
           </p>
         </div>
         <div className="img">
