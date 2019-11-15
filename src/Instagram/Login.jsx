@@ -11,6 +11,23 @@ class Login extends Component {
     return (
       <div className="login-page">
         <LoginBlock />
+        <div className="instagram-all-footer">
+          <ul>
+            <li>about us</li>
+            <li>Support</li>
+            <li>press</li>
+            <li>api</li>
+            <li>jobs</li>
+            <li>Privacy</li>
+            <li>terms</li>
+            <li>Directory</li>
+            <li>profiles</li>
+            <li>Hashtags</li>
+            <li>language</li>
+
+            <span>@ 2019 INSTAGRAM</span>
+          </ul>
+        </div>
       </div>
     );
   }
@@ -30,8 +47,12 @@ class LoginPhotoBlock extends Component {
   render() {
     return (
       <div className="login-photo-block">
-        <img src={phone} alt="" />
-        <img src={screen} alt="" />
+        <div
+          className="login-background"
+          style={{ backgroundImage: 'url(' + phone + ')' }}
+        >
+          <img src={screen} alt="" />
+        </div>
       </div>
     );
   }
@@ -77,9 +98,11 @@ class LoginFormBlock extends Component {
             Have an account? <span>Log in</span>
           </h5>
         </div>
-        <p>Get the app.</p>
-        <img src={apple} alt="" />
-        <img src={android} alt="" />
+        <div className="img">
+          <p>Get the app.</p>
+          <img src={apple} alt="" />
+          <img src={android} alt="" />
+        </div>
       </div>
     );
   }
