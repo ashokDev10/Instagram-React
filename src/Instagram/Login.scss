@@ -100,12 +100,18 @@
         border-radius: 2px;
         border: 1px solid rgb(236, 236, 236);
         font-family: 'roboto';
-        h5 {
+        p {
           font-size: 16px;
-
+          margin: 26px 0 0 -40px;
           span {
             margin-left: 14px;
             color: #3897f0;
+            .insta-login {
+              p {
+                margin: -19px 0 0 175px;
+                font-weight: bold;
+              }
+            }
           }
         }
       }

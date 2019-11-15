@@ -9,18 +9,18 @@ import IGTV from './Instagram/IGTV';
 import Login from './Instagram/Login';
 
 const menu = [
+  'login',
   'insta',
   'discover-explore',
   'profile',
   'EditProfile',
-  'IGTV',
-  'login'
+  'IGTV'
 ];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
       {menus.map(m => (
-        <Link to={m === 'insta' ? '/' : `/${m}`}>
+        <Link to={m === 'login' ? '/' : `/${m}`}>
           <li>{m}</li>
         </Link>
       ))}
@@ -35,12 +35,12 @@ class App extends React.Component {
         <BrowserRouter>
           <Navigation menus={menu} />
           <Switch>
-            <Route exact path="/" component={Instagram} />
+            <Route exact path="/" component={Login} />
+            <Route exact path="/insta" component={Instagram} />
             <Route exact path="/discover-explore" component={DiscoverExplore} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/EditProfile" component={EditProfile} />
             <Route exact path="/IGTV" component={IGTV} />
-            <Route exact path="/login" component={Login} />
           </Switch>
         </BrowserRouter>
       </div>

@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import './Login.scss';
+import { Link } from 'react-router-dom';
 import phone from './LogImage/phone.png';
 import screen from './LogImage/screen.jpg';
 import apple from './LogImage/apple.png';
 import android from './LogImage/android.png';
 import title from './images2/title.png';
+
+const InstaLogin = ({ text }) => (
+  <div className="insta-login">
+    <Link
+      to={text === 'Log in' ? 'sign up' : './insta'}
+      style={{ textDecoration: 'none' }}
+    >
+      <p>{text}</p>
+    </Link>
+  </div>
+);
 
 class Login extends Component {
   render() {
@@ -94,9 +106,12 @@ class LoginFormBlock extends Component {
           </h5>
         </div>
         <div className="login-press">
-          <h5>
-            Have an account? <span>Log in</span>
-          </h5>
+          <p>
+            Have an account?
+            <span>
+              <InstaLogin text="Log in " />
+            </span>
+          </p>
         </div>
         <div className="img">
           <p>Get the app.</p>
