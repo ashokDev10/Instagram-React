@@ -31,7 +31,7 @@ class App extends React.Component {
             <Route exact path="/" component={Login} />
             <Route exact path="/insta" component={Instagram} />
             <Route exact path="/discover-explore" component={DiscoverExplore} />
-            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/insta/profile" component={Profile} />
             <Route exact path="/EditProfile" component={EditProfile} />
             <Route exact path="/IGTV" component={IGTV} />
           </Switch>

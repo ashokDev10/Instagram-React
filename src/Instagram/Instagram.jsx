@@ -12,8 +12,6 @@ import profile from './images/profile.png';
 import title from './images2/title.png';
 import { Link } from 'react-router-dom';
 
-
-
 class HomePage extends Component {
   render() {
     return (
@@ -31,7 +29,10 @@ class HomePage extends Component {
               <i className="fa fa-search" />
             </div>
             <div className="icons">
-              <img id="i1" src={profile} alt="" />
+              <Link to="/insta/profile" style={{ textDecoration: 'none' }}>
+                <img id="i1" src={profile} alt="" />
+              </Link>
+
               <img id="i2" src={like} alt="" />
               <img id="i3" src={compass} alt="" />
             </div>
