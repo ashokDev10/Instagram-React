@@ -6,7 +6,7 @@ import save from './comImage/save.png';
 import tag from './comImage/tag.png';
 
 import Post from './ExplorePost';
-
+import { Link } from 'react-router-dom';
 import pro1 from './images/p1.jpeg';
 import pro2 from './images/p2.jpeg';
 import pro3 from './images/p3.jpeg';
@@ -23,7 +23,9 @@ class ProfileBlock extends Component {
         <div className="p-right">
           <h3>ux_database</h3>
           <div>
-            <small>Edit Profile</small>
+            <Link to="./profile/EditProfile" style={{ textDecoration: 'none' }}>
+              <small>Edit Profile</small>
+            </Link>
           </div>
           <i class="fas fa-cog"></i>
 

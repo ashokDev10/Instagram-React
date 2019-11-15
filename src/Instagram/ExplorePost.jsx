@@ -52,9 +52,9 @@ class ExplorePost extends Component {
         <img src={image} alt="" className="image" />
         <div class="middle">
           <div class="text">
-            <i className="fa fa-heart" />
+            <i class="fas fa-heart"></i>
             <span>23</span>
-            <i className="fa fa-comment" />
+            <i class="fas fa-comment"></i>
             <span>4</span>
           </div>
         </div>
