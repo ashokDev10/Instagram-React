@@ -7,6 +7,7 @@ import Profile from './Instagram/Profile';
 import EditProfile from './Instagram/EditProfile';
 import IGTV from './Instagram/IGTV';
 import Login from './Instagram/Login';
+import InstaComment from './Instagram/InstaComment';
 
 // const menu = ['login'];
 // const Navigation = ({ menus }) => (
@@ -42,6 +43,7 @@ class App extends React.Component {
               component={EditProfile}
             />
             <Route exact path="/insta/profile/IGTV" component={IGTV} />
+            <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
         </BrowserRouter>
       </div>

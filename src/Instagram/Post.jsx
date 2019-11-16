@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Post.scss';
+import { Link } from 'react-router-dom';
 import Like from './Like';
 import Comment from './Comment';
 import Share from './Share';
@@ -56,14 +57,12 @@ class Header extends Component {
       <div className="header">
         <img src={image1} alt="" />
 
-        <ul>
-          <li>
-            <p>web_developer</p>
-          </li>
-          <li>
-            <i className="fas fa-ellipsis-h" />
-          </li>
-        </ul>
+        <p>
+          web_developer <span>...</span>
+        </p>
+        <b>Tamil Nadu, India</b>
+
+        {/* <i className="fas fa-ellipsis-h" /> */}
       </div>
     );
   }
@@ -106,7 +105,10 @@ class Icons extends Component {
           <span role="img"> This is so great 🔥</span>
           <i id="i1" className="far fa-heart" />
         </h5>
-        <h4>View all 4 comments</h4>
+        <Link to="./comment" style={{ textDecoration: 'none' }}>
+          <h4>View all 4 comments</h4>
+        </Link>
+
         <h3>
           massive_thinks
           <span>Hi Beauty</span>
