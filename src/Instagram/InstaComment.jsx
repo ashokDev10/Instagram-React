@@ -27,9 +27,8 @@ class InstaCommentBox extends Component {
         </div>
         <div className="insta-comment-right">
           <div className="insta-comment-profile">
-            <div className="comment-profile">
+            <div className="user-comment-profile">
               <img src={dp} alt="" />
-
               <p>
                 web_developer
                 <b>
@@ -38,6 +37,12 @@ class InstaCommentBox extends Component {
                 <span id="i2">...</span>
               </p>
               <small>Tamil Nadu, India</small>
+            </div>
+            <div className="user-comment">
+              <img src={dp} alt="" />
+              <p>
+                web_developer <span>Playing cute baby</span>
+              </p>
             </div>
           </div>
         </div>

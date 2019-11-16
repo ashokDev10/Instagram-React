@@ -5,7 +5,7 @@ import Footer from './Footer';
 import StoryPost from './StoryPost';
 // import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
-import pro from './images/pro.png';
+import pro from './images/pro.jpg';
 import InstaHead from './InstaHead';
 
 class HomePage extends Component {
@@ -23,7 +23,8 @@ class HomePage extends Component {
               <p>
                 <img src={pro} alt="" />
                 <h5>khrist_yohan</h5>
-                <span>Khrist YohaN </span>
+                <span>Khrist YohaN</span>
+                <b>😍👨‍⚖️🧕</b>
               </p>
             </div>
             <div className="home-stories">

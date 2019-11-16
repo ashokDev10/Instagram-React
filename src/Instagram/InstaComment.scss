@@ -11,7 +11,8 @@
       background: rgb(0, 204, 255);
       display: grid;
       grid-template-columns: 3.1fr 2fr;
-      border: 1px solid black;
+      border: 1px solid rgb(243, 243, 243);
+      border-radius: 4px;
       .insta-comment-left {
         background: yellowgreen;
         height: 600px;
@@ -23,9 +24,10 @@
       }
       .insta-comment-right {
         background: deeppink;
-        .comment-profile {
+        .user-comment-profile {
+          border-top-right-radius: 4px;
           height: 75px;
-          border: 1px solid rgb(235, 235, 235);
+          border: 1px solid rgb(243, 243, 243);
           img {
             margin: 12px 0 0 12px;
             padding: 0;
@@ -71,6 +73,33 @@
             margin: 0 10px 0 10px;
             font-weight: normal;
             font-family: 'Arial';
+          }
+        }
+        .user-comment {
+          height: 75px;
+
+          img {
+            margin: 12px 0 0 12px;
+            padding: 0;
+            height: 46px;
+            width: 46px;
+            border-radius: 50%;
+            float: left;
+            border: 3px solid red;
+          }
+
+          p {
+            margin: 0;
+            padding: 20px 0 0 72px;
+            font-size: 15px;
+            font-family: 'Helvetica';
+            font-weight: 600;
+
+            span {
+              font-weight: normal;
+              font-size: 16px;
+              font-family: 'Helvetica';
+            }
           }
         }
       }
