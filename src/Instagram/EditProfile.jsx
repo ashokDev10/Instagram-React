@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './EditProfile.scss';
 import pro1 from './images/p1.jpeg';
 import InstaHead from './InstaHead';
+import InstagramFooter from './InstagramFooter';
 
 class EditProfile extends Component {
   render() {
@@ -10,23 +11,7 @@ class EditProfile extends Component {
         <InstaHead />
         <div className="edit-profile-page">
           <EditProfileBlock />
-          <div className="instagram-all-footer">
-            <ul>
-              <li>about us</li>
-              <li>Support</li>
-              <li>press</li>
-              <li>api</li>
-              <li>jobs</li>
-              <li>Privacy</li>
-              <li>terms</li>
-              <li>Directory</li>
-              <li>profiles</li>
-              <li>Hashtags</li>
-              <li>language</li>
-
-              <span>@ 2019 INSTAGRAM</span>
-            </ul>
-          </div>
+          <InstagramFooter />
         </div>
       </div>
     );

@@ -10,7 +10,7 @@
     border: 1px solid rgb(233, 233, 233);
     border-radius: 4px;
     .EP-left {
-      font-family: "roboto";
+      font-family: 'roboto';
       border-right: 1px solid rgb(233, 233, 233);
       div {
         height: 60px;
@@ -44,7 +44,7 @@
       grid-template-columns: 1fr 2fr;
       .eb-left {
         text-align: right;
-        font-family: "roboto";
+        font-family: 'roboto';
         img {
           padding: 0;
           height: 45px;
@@ -81,12 +81,12 @@
       .eb-right {
         h3 {
           font-size: 26px;
-          font-family: "roboto";
+          font-family: 'roboto';
           font-weight: normal;
           margin: 30px 0 4px 0;
         }
         span {
-          font-family: "roboto";
+          font-family: 'roboto';
           font-size: 16px;
           font-weight: 600;
           color: #3897f0;
@@ -117,7 +117,7 @@
             }
             h6 {
               margin: 0;
-              font-family: "poppins";
+              font-family: 'poppins';
               font-size: 16px;
               font-weight: 600;
 
@@ -126,7 +126,7 @@
             }
             small {
               margin: 0;
-              font-family: "roboto";
+              font-family: 'roboto';
               font-size: 16px;
               opacity: 0.8;
               font-weight: normal;
@@ -142,14 +142,14 @@
         p {
           width: 320px;
           margin-top: 28px;
-          font-family: "poppins";
+          font-family: 'poppins';
           line-height: 1.2;
           font-size: 16px;
           font-weight: 600;
           span {
             margin: 0 4px;
             font-size: 16px;
-            font-family: "roboto";
+            font-family: 'roboto';
             font-weight: 600;
           }
         }
@@ -170,38 +170,10 @@
         h2 {
           font-size: 14px;
           color: #3897f0;
-          font-family: "roboto";
+          font-family: 'roboto';
           letter-spacing: 0.5px;
           margin: 56px 0 0 160px;
         }
-      }
-    }
-  }
-  .instagram-all-footer {
-    height: 30px;
-    width: 1150px;
-    margin: 50px auto;
-    ul {
-      padding: 0;
-
-      list-style-type: none;
-      text-transform: uppercase;
-      li {
-        font-size: 12px;
-        margin: 0 20px 0 0;
-        font-family: "poppins";
-        float: left;
-        color: blue;
-        font-weight: bolder;
-      }
-      span {
-        float: right;
-        font-size: 14px;
-        margin: 0;
-        font-family: "poppins";
-        color: black;
-        opacity: 0.5;
-        font-weight: bolder;
       }
     }
   }

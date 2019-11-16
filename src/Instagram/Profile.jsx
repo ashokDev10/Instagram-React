@@ -13,6 +13,9 @@ import pro2 from './images/p2.jpeg';
 import pro3 from './images/p3.jpeg';
 import pro4 from './images/p4.jpeg';
 import pro5 from './images/p5.jpeg';
+import pro6 from './images/p6.jpeg';
+import pro7 from './images/p7.jpeg';
+import InstagramFooter from './InstagramFooter';
 
 class ProfileBlock extends Component {
   render() {
@@ -57,6 +60,8 @@ class HighlightBlock extends Component {
         <HighlightPost image={pro3} text="TAMILAN" />
         <HighlightPost image={pro4} text="BIKE LOVE" />
         <HighlightPost image={pro5} text="RIDING LOVE" />
+        <HighlightPost image={pro6} text="GUEEN" />
+        <HighlightPost image={pro7} text="CUTE" />
       </div>
     );
   }
@@ -65,11 +70,13 @@ class HighlightPost extends Component {
   render() {
     const { image, text } = this.props;
     return (
-      <div className="highlight-post">
-        <div>
-          <img src={image} alt="" />
+      <div className="highlight-box">
+        <div className="highlight-post">
+          <div>
+            <img src={image} alt="" />
+          </div>
+          <p>{text}</p>
         </div>
-        <p>{text}</p>
       </div>
     );
   }
@@ -128,25 +135,8 @@ class ProfilePage extends Component {
           <ProfileBlock />
           <HighlightBlock />
           <PostBlock />
-          
         </div>
-        <div className="instagram-all-footer">
-            <ul>
-              <li>about us</li>
-              <li>Support</li>
-              <li>press</li>
-              <li>api</li>
-              <li>jobs</li>
-              <li>Privacy</li>
-              <li>terms</li>
-              <li>Directory</li>
-              <li>profiles</li>
-              <li>Hashtags</li>
-              <li>language</li>
-
-              <span>@ 2019 INSTAGRAM</span>
-            </ul>
-          </div>
+        <InstagramFooter />
       </div>
     );
   }

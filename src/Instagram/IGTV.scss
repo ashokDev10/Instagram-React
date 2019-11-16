@@ -1,61 +1,242 @@
-.IGTV-page {
-  .IGTV-container {
+.IGTV-profile-page {
+  width: 1040px;
+  height: 2040px;
+  margin: -40px auto 0 auto;
+
+  .IGTV-profile-block {
     width: 1040px;
-    height: 1200px;
-    margin: auto;
-
+    height: 350px;
     display: grid;
-    grid-gap: 28px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    .container {
-      background: black;
-      position: relative;
-      .image {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: 100%;
-        transition: 0.1s ease;
-        backface-visibility: hidden;
+    grid-template-columns: 1.1fr 2fr;
+    .p-left {
+      text-align: center;
+      padding-top: 50px;
+      img {
+        padding: 0;
+        height: 158px;
+        width: 158px;
+        border-radius: 50%;
+        margin: 0;
       }
-
-      .middle {
-        transition: 0.1s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+    }
+    .p-right {
+      h3 {
+        font-size: 28px;
+        font-family: 'roboto';
+        font-weight: normal;
+        margin: 58px 0 0 0;
+      }
+      div {
+        width: 110px;
+        height: 23px;
+        border: 1px solid rgb(233, 233, 233);
+        border-radius: 4px;
+        font-size: 16px;
+        margin: -30px 0 0 190px;
+        padding-top: 4px;
         text-align: center;
-        .text {
-          width: 200px;
-
-          color: white;
+        small {
+          color: black;
+          padding-top: -4px;
           font-size: 16px;
-          padding: 16px 32px;
-          i {
-            margin: 0 15px;
-            font-size: 18px;
+          vertical-align: middle;
+          font-weight: 600;
+          font-family: 'lato', sans-serif;
+        }
+      }
+      img {
+        margin: -46px 0 0 310px;
+        position: absolute;
+        width: 62px;
+        height: 62px;
+      }
+      #txt1 {
+        padding-top: 14px;
+        span {
+          font-weight: bold;
+          font-size: 18px;
+          margin: 0 4px 0 0;
+          font-family: 'rubik', sans-serif;
+        }
+        small {
+          margin: 0 40px 0 0;
+          font-weight: normal;
+          font-size: 22px;
+          letter-spacing: normal;
+          font-family: 'rubik', sans-serif;
+        }
+      }
+      h4 {
+        margin: 24px 0 4px 0;
+        font-size: 20px;
+        font-family: 'roboto', sans-serif;
+      }
+      #txt2 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: 'roboto', sans-serif;
+      }
+    }
+  }
+  .IGTV-highlight-block {
+    height: 250px;
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .IGTV-highlight-box {
+      text-align: center;
+
+      .IGTV-highlight-post {
+        height: 160px;
+        div {
+          margin-top: 20%;
+          margin-left: 20%;
+
+          height: 104px;
+          width: 104px;
+          border-radius: 50%;
+          background: rgb(255, 255, 255);
+
+          border: 2px solid rgb(243, 243, 243);
+          img {
+            margin-top: 6px;
+            padding: 0;
+            height: 92px;
+            width: 92px;
+            border-radius: 50%;
           }
-          span {
-            font-weight: bold;
-            font-family: 'roboto';
-            font-size: 18px;
-          }
+        }
+        p {
+          margin: 10px 0;
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: normal;
+          font-family: 'Ramabhadra', sans-serif;
         }
       }
     }
-    .container:hover .image {
-      opacity: 0.6;
-      cursor: pointer;
-    }
+  }
+  .IGTV-post-block {
+    width: 100%;
 
-    .container:hover .middle {
-      opacity: 1;
-      cursor: pointer;
+    float: left;
+
+    border-top: 1px solid rgb(240, 240, 240);
+    .IGTV-page {
+      .IGTV-container {
+        width: 1040px;
+        height: 1200px;
+        margin: auto;
+
+        display: grid;
+        grid-gap: 28px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .container {
+          background: black;
+          position: relative;
+          .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: 0.1s ease;
+            backface-visibility: hidden;
+          }
+
+          .middle {
+            transition: 0.1s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            .text {
+              width: 200px;
+
+              color: white;
+              font-size: 16px;
+              padding: 16px 32px;
+              i {
+                margin: 0 15px;
+                font-size: 18px;
+              }
+              span {
+                font-weight: bold;
+                font-family: 'roboto';
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .container:hover .image {
+          opacity: 0.6;
+          cursor: pointer;
+        }
+
+        .container:hover .middle {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+    .IGTV-profile-post-head {
+      padding: 0 200px;
+      height: 60px;
+      ul {
+        margin: 0;
+        list-style-type: none;
+        #li1 {
+          float: left;
+          width: 70px;
+
+          border-top: 1px solid black;
+          p {
+            margin: 0;
+            font-size: 16px;
+            font-family: 'NTR', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            b {
+              opacity: 1;
+              margin-top: -20px;
+            }
+            img {
+              width: 14px;
+              height: 14px;
+              margin: 18px 6px 0 0;
+            }
+          }
+        }
+
+        #li2 {
+          margin: 0 25px;
+          float: left;
+          font-size: 16px;
+          font-family: 'NTR', sans-serif;
+          font-weight: bolder;
+          text-transform: uppercase;
+          padding: 0;
+          p {
+            margin: 0;
+            span {
+              opacity: 0.4;
+
+              img {
+                width: 14px;
+                height: 14px;
+
+                margin: 19px 6px 0 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -30,11 +30,14 @@ import pro2 from './images/p2.jpeg';
 import pro3 from './images/p3.jpeg';
 import pro4 from './images/p4.jpeg';
 import pro5 from './images/p5.jpeg';
+import pro6 from './images/p6.jpeg';
+import pro7 from './images/p7.jpeg';
+import InstagramFooter from './InstagramFooter';
 
 class ProfileBlock extends Component {
   render() {
     return (
-      <div className="profile-block">
+      <div className="IGTV-profile-block">
         <div className="p-left">
           <img src={pro1} alt="" />
         </div>
@@ -69,11 +72,13 @@ class ProfileBlock extends Component {
 class HighlightBlock extends Component {
   render() {
     return (
-      <div className="highlight-block">
+      <div className="IGTV-highlight-block">
         <HighlightPost image={pro2} text="TRAVELLER" />
         <HighlightPost image={pro3} text="TAMILAN" />
         <HighlightPost image={pro4} text="BIKE LOVE" />
         <HighlightPost image={pro5} text="RIDING LOVE" />
+        <HighlightPost image={pro6} text="QUEEN" />
+        <HighlightPost image={pro7} text="CUTE" />
       </div>
     );
   }
@@ -82,11 +87,13 @@ class HighlightPost extends Component {
   render() {
     const { image, text } = this.props;
     return (
-      <div className="highlight-post">
-        <div>
-          <img src={image} alt="" />
+      <div className="IGTV-highlight-box">
+        <div className="IGTV-highlight-post">
+          <div>
+            <img src={image} alt="" />
+          </div>
+          <p>{text}</p>
         </div>
-        <p>{text}</p>
       </div>
     );
   }
@@ -94,8 +101,8 @@ class HighlightPost extends Component {
 class PostBlock extends Component {
   render() {
     return (
-      <div className="post-block">
-        <div className="profile-post-head">
+      <div className="IGTV-post-block">
+        <div className="IGTV-profile-post-head">
           <ul>
             <li id="li2">
               <p>
@@ -130,7 +137,6 @@ class PostBlock extends Component {
           </ul>
         </div>
         <IGTV />
-       
       </div>
     );
   }
@@ -141,28 +147,12 @@ class ProfilePage extends Component {
     return (
       <div>
         <InstaHead />
-        <div className="profile-page">
+        <div className="IGTV-profile-page">
           <ProfileBlock />
           <HighlightBlock />
           <PostBlock />
         </div>
-        <div className="instagram-all-footer">
-          <ul>
-            <li>about us</li>
-            <li>Support</li>
-            <li>press</li>
-            <li>api</li>
-            <li>jobs</li>
-            <li>Privacy</li>
-            <li>terms</li>
-            <li>Directory</li>
-            <li>profiles</li>
-            <li>Hashtags</li>
-            <li>language</li>
-
-            <span>@ 2019 INSTAGRAM</span>
-          </ul>
-        </div>
+        <InstagramFooter />
       </div>
     );
   }
@@ -190,7 +180,6 @@ class IGTV extends Component {
           <IGTVBlock image={pic15} />
           <IGTVBlock image={pic16} />
         </div>
-        
       </div>
     );
   }

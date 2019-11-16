@@ -1,11 +1,11 @@
 .profile-page {
   width: 1040px;
-  height: 2480px;
+  height: 2540px;
   margin: -40px auto 0 auto;
 
   .profile-block {
     width: 1040px;
-    height: 350px;
+    height: 330px;
     display: grid;
     grid-template-columns: 1.1fr 2fr;
     .p-left {
@@ -80,36 +80,46 @@
     }
   }
   .highlight-block {
-    height: 200px;
+    height: 240px;
+    width: 100%;
+    margin-top: 60px;
+    background: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .highlight-box {
+      text-align: center;
 
-    .highlight-post {
-      float: left;
-      padding: 40px 30px;
+      .highlight-post {
+        height: 160px;
+        div {
+          margin-top: 20%;
+          margin-left: 20%;
 
-      div {
-        height: 96px;
-        width: 96px;
-        border-radius: 50%;
-        background: rgb(255, 255, 255);
-        margin: 0;
-        border: 2px solid rgb(211, 211, 211);
-        img {
-          padding: 0;
-          margin: 4px 0 0 4px;
-          height: 88px;
-          width: 88px;
+          height: 104px;
+          width: 104px;
           border-radius: 50%;
+          background: rgb(255, 255, 255);
+
+          border: 2px solid rgb(243, 243, 243);
+          img {
+            margin-top: 6px;
+            padding: 0;
+            height: 92px;
+            width: 92px;
+            border-radius: 50%;
+          }
         }
-      }
-      p {
-        margin: 10px 0;
-        font-weight: normal;
-        font-size: 20px;
-        letter-spacing: normal;
-        font-family: 'Ramabhadra', sans-serif;
+        p {
+          margin: 10px 0;
+          font-weight: normal;
+          font-size: 18px;
+          letter-spacing: normal;
+          font-family: 'Ramabhadra', sans-serif;
+        }
       }
     }
   }
+
   .post-block {
     width: 100%;
 
@@ -168,35 +178,6 @@
           }
         }
       }
-    }
-  }
-}
-.instagram-all-footer {
-  height: 30px;
-  width: 1150px;
-
-  margin: 80px auto 60px auto;
-  ul {
-    padding: 0;
-
-    list-style-type: none;
-    text-transform: uppercase;
-    li {
-      font-size: 12px;
-      margin: 0 20px 0 0;
-      font-family: 'poppins';
-      float: left;
-      color: blue;
-      font-weight: bolder;
-    }
-    span {
-      float: right;
-      font-size: 14px;
-      margin: 0;
-      font-family: 'poppins';
-      color: black;
-      opacity: 0.5;
-      font-weight: bolder;
     }
   }
 }
