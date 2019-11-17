@@ -115,7 +115,7 @@
     .profile-post {
       .profile-gallery-head {
         height: 55px;
-        background: red;
+
         display: grid;
         grid-gap: 45px;
         grid-template-columns: 3fr 1fr 1fr 1fr 1.1fr 3fr;
@@ -123,8 +123,9 @@
           margin: 0;
           padding: 0;
           height: 55px;
-          border-top: 1px solid rgb(230, 230, 230);
-          background: yellow;
+          border-top: 1px solid rgb(245, 245, 245);
+
+          transition-duration: 0.3s;
           img {
             height: 20px;
             width: 14px;
@@ -141,13 +142,15 @@
             font-size: 15px;
             font-weight: bold;
             opacity: 0.5;
+            transition-duration: 0.3s;
+            color: black;
           }
         }
         .list-grid:hover {
           border-top: 1px solid black;
         }
         .list-grid:hover p {
-          opacity: 1;
+          opacity: 0.8;
         }
       }
       .profile-gallery {
@@ -157,56 +160,6 @@
           }
         }
       }
-
-      // ul {
-      //   margin: 0;
-      //   list-style-type: none;
-      //   #li1 {
-      //     float: left;
-      //     width: 70px;
-
-      //     border-top: 1px solid black;
-      //     p {
-      //       margin: 0;
-      //       font-size: 16px;
-      //       font-family: 'NTR', sans-serif;
-      //       font-weight: bolder;
-      //       text-transform: uppercase;
-      //       b {
-      //         opacity: 1;
-      //         margin-top: -20px;
-      //       }
-      //       img {
-      //         width: 14px;
-      //         height: 14px;
-      //         margin: 18px 6px 0 0;
-      //       }
-      //     }
-      //   }
-
-      //   #li2 {
-      //     margin: 0 25px;
-      //     float: left;
-      //     font-size: 16px;
-      //     font-family: 'NTR', sans-serif;
-      //     font-weight: bolder;
-      //     text-transform: uppercase;
-      //     padding: 0;
-      //     p {
-      //       margin: 0;
-      //       span {
-      //         opacity: 0.4;
-
-      //         img {
-      //           width: 14px;
-      //           height: 14px;
-
-      //           margin: 19px 6px 0 0;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
 }
