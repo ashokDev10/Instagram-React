@@ -9,12 +9,14 @@ import InstaHead from './InstaHead';
 import Post from './ExplorePost';
 import { Link } from 'react-router-dom';
 import pro from './images/my_dp.jpg';
-import pro2 from './images/p2.jpeg';
-import pro3 from './images/p3.jpeg';
-import pro4 from './images/p4.jpeg';
-import pro5 from './images/p5.jpeg';
-import pro6 from './images/p6.jpeg';
-import pro7 from './images/p7.jpeg';
+import hi1 from './HighlightImage/h1.jpg';
+import hi2 from './HighlightImage/h2.jpg';
+import hi3 from './HighlightImage/h3.jpg';
+import hi4 from './HighlightImage/h7.jpg';
+import hi5 from './HighlightImage/h5.jpg';
+import hi6 from './HighlightImage/h6.jpg';
+import hi7 from './HighlightImage/h4.jpg';
+
 import InstagramFooter from './InstagramFooter';
 
 class ProfileBlock extends Component {
@@ -56,12 +58,13 @@ class HighlightBlock extends Component {
   render() {
     return (
       <div className="highlight-block">
-        <HighlightPost image={pro2} text="TRAVELLER" />
-        <HighlightPost image={pro3} text="TAMILAN" />
-        <HighlightPost image={pro4} text="BIKE LOVE" />
-        <HighlightPost image={pro5} text="RIDING LOVE" />
-        <HighlightPost image={pro6} text="GUEEN" />
-        <HighlightPost image={pro7} text="CUTE" />
+        <HighlightPost image={hi1} text="CAMARA" />
+        <HighlightPost image={hi2} text="Lightings" />
+        <HighlightPost image={hi3} text="Set Engin" />
+        <HighlightPost image={hi4} text="Heart Light" />
+        <HighlightPost image={hi5} text="Love" />
+        <HighlightPost image={hi6} text="TIMER" />
+        <HighlightPost image={hi7} text="RANGOLI" />
       </div>
     );
   }

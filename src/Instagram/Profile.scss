@@ -1,5 +1,5 @@
 .profile-page {
-  width: 1100px;
+  width: 1070px;
   height: 2540px;
   margin: -50px auto 0 auto;
   font-family: 'Helvetica';
@@ -75,52 +75,43 @@
     }
   }
   .highlight-block {
-    height: 240px;
-    width: 100%;
-    margin-top: 60px;
-
+    height: 220px;
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     .highlight-box {
       text-align: center;
 
       .highlight-post {
-        height: 160px;
         div {
           margin-top: 20%;
           margin-left: 20%;
-
-          height: 104px;
-          width: 104px;
+          height: 87px;
+          width: 87px;
           border-radius: 50%;
           background: rgb(255, 255, 255);
 
           border: 2px solid rgb(243, 243, 243);
           img {
-            margin-top: 6px;
+            margin-top: 01px;
             padding: 0;
-            height: 92px;
-            width: 92px;
+            height: 85px;
+            width: 85px;
             border-radius: 50%;
           }
         }
         p {
-          margin: 10px 0;
-          font-weight: normal;
-          font-size: 18px;
+          margin: 22px 0;
+          font-weight: bold;
+          font-size: 15px;
           letter-spacing: normal;
-          font-family: 'Ramabhadra', sans-serif;
         }
       }
     }
   }
 
   .post-block {
-    width: 100%;
-
-    float: left;
-
-    border-top: 1px solid rgb(240, 240, 240);
+    border-top: 1px solid rgb(230, 230, 230);
     .profile-post-head {
       padding: 0 200px;
       height: 60px;
