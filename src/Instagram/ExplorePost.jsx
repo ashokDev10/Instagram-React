@@ -21,6 +21,9 @@ import pi18 from './postImage/p18.jpg';
 import pi19 from './postImage/p19.jpg';
 import pi20 from './postImage/p20.jpg';
 import pi21 from './postImage/p21.jpg';
+import pi22 from './postImage/p22.jpg';
+import pi23 from './postImage/p23.jpg';
+import pi24 from './postImage/p24.jpg';
 
 class Post extends Component {
   render() {
@@ -171,6 +174,27 @@ class Post extends Component {
               },
               {
                 image: pi21,
+                like: 'fas fa-heart',
+                nolikes: '56',
+                comment: 'fas fa-comment',
+                nocomments: '64'
+              },
+              {
+                image: pi22,
+                like: 'fas fa-heart',
+                nolikes: '83',
+                comment: 'fas fa-comment',
+                nocomments: '35'
+              },
+              {
+                image: pi23,
+                like: 'fas fa-heart',
+                nolikes: '34',
+                comment: 'fas fa-comment',
+                nocomments: '28'
+              },
+              {
+                image: pi24,
                 like: 'fas fa-heart',
                 nolikes: '56',
                 comment: 'fas fa-comment',
