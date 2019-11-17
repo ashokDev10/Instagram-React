@@ -5,7 +5,7 @@ import Footer from './Footer';
 import StoryPost from './StoryPost';
 // import DiscoverExplore from './DiscoverExplore';
 import SuggestionProfile from './SuggestionProfile';
-import pro from './images/pro.jpg';
+import pro from './images/my_dp.jpg';
 import InstaHead from './InstaHead';
 
 class HomePage extends Component {

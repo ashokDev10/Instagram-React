@@ -8,7 +8,7 @@ import settings from './LogImage/settings.png';
 import InstaHead from './InstaHead';
 import Post from './ExplorePost';
 import { Link } from 'react-router-dom';
-import pro1 from './images/p1.jpeg';
+import pro from './images/my_dp.jpg';
 import pro2 from './images/p2.jpeg';
 import pro3 from './images/p3.jpeg';
 import pro4 from './images/p4.jpeg';
@@ -22,10 +22,10 @@ class ProfileBlock extends Component {
     return (
       <div className="profile-block">
         <div className="p-left">
-          <img src={pro1} alt="" />
+          <img src={pro} alt="" />
         </div>
         <div className="p-right">
-          <h3>ux_database</h3>
+          <h3>khrist_yohan</h3>
           <div>
             <Link to="./profile/EditProfile" style={{ textDecoration: 'none' }}>
               <small>Edit Profile</small>

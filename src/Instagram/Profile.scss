@@ -1,10 +1,9 @@
 .profile-page {
-  width: 1040px;
+  width: 1100px;
   height: 2540px;
-  margin: -40px auto 0 auto;
-
+  margin: -50px auto 0 auto;
+  font-family: 'Helvetica';
   .profile-block {
-    width: 1040px;
     height: 330px;
     display: grid;
     grid-template-columns: 1.1fr 2fr;
@@ -13,69 +12,65 @@
       padding-top: 50px;
       img {
         padding: 0;
-        height: 158px;
-        width: 158px;
+        height: 164px;
+        width: 164px;
         border-radius: 50%;
         margin: 0;
       }
     }
     .p-right {
       h3 {
-        font-size: 28px;
-        font-family: 'roboto';
+        font-size: 31px;
+        opacity: 0.8;
         font-weight: normal;
-        margin: 58px 0 0 0;
+        margin: 56px 0 0 0;
       }
       div {
-        width: 110px;
-        height: 23px;
+        width: 100px;
+        height: 26px;
         border: 1px solid rgb(233, 233, 233);
         border-radius: 4px;
         font-size: 16px;
-        margin: -30px 0 0 190px;
+        margin: -35px 0 0 196px;
         padding-top: 4px;
         text-align: center;
         small {
           color: black;
           padding-top: -4px;
-          font-size: 16px;
+          font-size: 15px;
           vertical-align: middle;
           font-weight: 600;
-          font-family: 'lato', sans-serif;
         }
       }
       img {
-        margin: -46px 0 0 310px;
+        margin: -47px 0 0 300px;
         position: absolute;
         width: 62px;
         height: 62px;
       }
       #txt1 {
-        padding-top: 14px;
+        padding-top: 10px;
         span {
           font-weight: bold;
           font-size: 18px;
-          margin: 0 4px 0 0;
-          font-family: 'rubik', sans-serif;
+          margin: 0 2px 0 0;
         }
         small {
-          margin: 0 40px 0 0;
+          margin: 0 44px 0 0;
           font-weight: normal;
-          font-size: 22px;
+          font-size: 19px;
           letter-spacing: normal;
-          font-family: 'rubik', sans-serif;
         }
       }
       h4 {
         margin: 24px 0 4px 0;
-        font-size: 20px;
-        font-family: 'roboto', sans-serif;
+        font-size: 18px;
+        opacity: 0.8;
       }
       #txt2 {
         margin: 0;
         font-size: 18px;
         line-height: 1.5;
-        font-family: 'roboto', sans-serif;
       }
     }
   }
@@ -83,7 +78,7 @@
     height: 240px;
     width: 100%;
     margin-top: 60px;
-   
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     .highlight-box {
