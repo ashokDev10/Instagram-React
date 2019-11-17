@@ -37,12 +37,16 @@ class App extends React.Component {
               component={DiscoverExplore}
             />
             <Route exact path="/insta/profile" component={Profile} />
+
+            <Route exact path="/insta/profile/igtv" component={Profile} />
+            <Route exact path="/insta/profile/saved" component={Profile} />
+            <Route exact path="/insta/profile/tagged" component={Profile} />
             <Route
               exact
               path="/insta/profile/EditProfile"
               component={EditProfile}
             />
-            <Route exact path="/insta/profile/IGTV" component={IGTV} />
+
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
         </BrowserRouter>

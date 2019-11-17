@@ -7,7 +7,7 @@ import tag from './comImage/tag.png';
 import settings from './LogImage/settings.png';
 import InstaHead from './InstaHead';
 import Post from './ExplorePost';
-import { Link } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import pro from './images/my_dp.jpg';
 import hi1 from './HighlightImage/h1.jpg';
 import hi2 from './HighlightImage/h2.jpg';
@@ -16,8 +16,30 @@ import hi4 from './HighlightImage/h7.jpg';
 import hi5 from './HighlightImage/h5.jpg';
 import hi6 from './HighlightImage/h6.jpg';
 import hi7 from './HighlightImage/h4.jpg';
-
 import InstagramFooter from './InstagramFooter';
+
+const Posts = () => <Post />;
+const Igtv = () => <p>igtv</p>;
+const Saved = () => <p>saved</p>;
+const Tagged = () => <p>tagged</p>;
+
+const ProfileGallery = ({ list }) => (
+  <div className="profile-gallery-head">
+    <div></div>
+    {list.map(l => (
+      <Link
+        to={l.text === 'posts' ? '/insta/profile' : `/insta/profile/${l.text}`}
+      >
+        <div className="list-grid">
+          <img src={l.photo} alt="" />
+          <p>{l.text}</p>
+        </div>
+      </Link>
+    ))}
+
+    <div></div>
+  </div>
+);
 
 class ProfileBlock extends Component {
   render() {
@@ -88,42 +110,39 @@ class PostBlock extends Component {
   render() {
     return (
       <div className="post-block">
-        <div className="profile-post-head">
-          <ul>
-            <li id="li1">
-              <p>
-                <img src={post} alt="" /> <b>posts</b>
-              </p>
-            </li>
-            <li id="li2">
-              <p>
-                <Link to="./profile/IGTV" style={{ textDecoration: 'none' }}>
-                  <span>
-                    <img src={igtv} alt="" />
-                    IGTV
-                  </span>
-                </Link>
-              </p>
-            </li>
-            <li id="li2">
-              <p>
-                <span>
-                  <img src={save} alt="" />
-                  SAVED
-                </span>
-              </p>
-            </li>
-            <li id="li2">
-              <p>
-                <span>
-                  <img src={tag} alt="" />
-                  tagged
-                </span>
-              </p>
-            </li>
-          </ul>
+        <div className="profile-post">
+          <ProfileGallery
+            list={[
+              {
+                photo: post,
+                text: 'posts'
+              },
+              {
+                photo: igtv,
+                text: 'igtv'
+              },
+              {
+                photo: save,
+                text: 'saved'
+              },
+              {
+                photo: tag,
+                text: 'tagged'
+              }
+            ]}
+          />
+
+          <div className="profile-gallery">
+            <div className="profile-gallery-block">
+              <Switch>
+                <Route exact path="/insta/profile" component={Posts} />
+                <Route exact path="/insta/profile/igtv" component={Igtv} />
+                <Route exact path="/insta/profile/saved" component={Saved} />
+                <Route exact path="/insta/profile/tagged" component={Tagged} />
+              </Switch>
+            </div>
+          </div>
         </div>
-        <Post />
       </div>
     );
   }
