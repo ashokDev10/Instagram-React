@@ -16,6 +16,9 @@
       color: rgb(0, 66, 141);
       font-weight: bolder;
     }
+    li:hover {
+      cursor: pointer;
+    }
     span {
       float: right;
       font-size: 13px;
@@ -23,6 +26,9 @@
       color: black;
       opacity: 0.4;
       font-weight: bolder;
+    }
+    span:hover {
+      cursor: pointer;
     }
   }
 }
