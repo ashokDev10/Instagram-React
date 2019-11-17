@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import pro1 from './images/p1.jpeg';
-import pro2 from './images/p2.jpeg';
-import pro3 from './images/p3.jpeg';
-import pro4 from './images/p4.jpeg';
-import pro5 from './images/p5.jpeg';
-import pro6 from './images/p6.jpeg';
-import pro7 from './images/p7.jpeg';
-import pro8 from './images/p8.jpeg';
-import pro9 from './images/p9.jpeg';
-import pro10 from './images/p10.jpeg';
+import si1 from './StoryImage/s1.jpg';
+import si2 from './StoryImage/s2.jpg';
+import si3 from './StoryImage/s3.jpg';
+import si4 from './StoryImage/s4.jpg';
+import si5 from './StoryImage/s5.jpg';
+import si6 from './StoryImage/s6.jpg';
+import si7 from './StoryImage/s7.jpg';
+import si8 from './StoryImage/s8.jpg';
+import si9 from './StoryImage/s9.jpg';
+import si10 from './StoryImage/s10.jpg';
+import si11 from './StoryImage/s11.jpg';
+import si12 from './StoryImage/s12.jpg';
 
 class StoryProfile extends Component {
   render() {
@@ -16,7 +18,9 @@ class StoryProfile extends Component {
     return (
       <div className="story-profile">
         <p>
-          <img src={image} alt="" />
+          <div>
+            <img src={image} alt="" />
+          </div>
           <h5>{userName}</h5>
           <span>{time}</span>
         </p>
@@ -34,16 +38,53 @@ class StoryPost extends Component {
           <span>Watch All</span>
         </h6>
 
-        <StoryProfile image={pro1} userName="cs_clonite" time="1 hour ago" />
-        <StoryProfile image={pro2} userName="chaalpritam" time="3 hour ago" />
-        <StoryProfile image={pro3} userName="elon_musk " time="4 hour ago" />
-        <StoryProfile image={pro4} userName="bill_gates" time="5 hour ago" />
-        <StoryProfile image={pro5} userName="mark_cuban" time="6 hour ago" />
-        <StoryProfile image={pro6} userName="naveenmuccara" time="7 hour ago" />
-        <StoryProfile image={pro7} userName="vignesh" time="8 hour ago" />
-        <StoryProfile image={pro8} userName="purushoth" time="9 hour ago" />
-        <StoryProfile image={pro9} userName="vignesh" time="8 hour ago" />
-        <StoryProfile image={pro10} userName="purushoth" time="9 hour ago" />
+        <div className="story-scroll">
+          <StoryProfile image={si1} userName="cs_clonite" time="11 hour ago" />
+          <StoryProfile
+            image={si2}
+            userName="googleindia"
+            time="2 minutes ago"
+          />
+
+          <StoryProfile image={si3} userName="beargrylls" time="20 hours ago" />
+          <StoryProfile image={si4} userName="hackaday" time="3 hour ago" />
+          <StoryProfile
+            image={si5}
+            userName="gadgetstricks"
+            time="13 hour ago"
+          />
+          <StoryProfile image={si6} userName="katemoross" time="7 hour ago" />
+          <StoryProfile
+            image={si7}
+            userName="shelmiyer.pcba"
+            time="14 hour ago"
+          />
+          <StoryProfile
+            image={si8}
+            userName="i.m.pratikdabhi"
+            time="14 hour ago"
+          />
+          <StoryProfile
+            image={si9}
+            userName="teamthrme5"
+            time="41 minutes ago"
+          />
+          <StoryProfile
+            image={si10}
+            userName="7.7.7.7_hacker"
+            time="8 hour ago"
+          />
+          <StoryProfile
+            image={si11}
+            userName="tedx_official"
+            time="9 hour ago"
+          />
+          <StoryProfile
+            image={si12}
+            userName="oneplus_india"
+            time="10 hour ago"
+          />
+        </div>
       </div>
     );
   }

@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-import pro1 from './images/p1.jpeg';
-import pro2 from './images/p2.jpeg';
-import pro3 from './images/p3.jpeg';
-import pro4 from './images/p4.jpeg';
-import pro5 from './images/p5.jpeg';
-import pro6 from './images/p6.jpeg';
-import pro7 from './images/p7.jpeg';
-import pro8 from './images/p8.jpeg';
-import pro9 from './images/p9.jpeg';
-import pro10 from './images/p10.jpeg';
+import si1 from './StoryImage/s4.jpg';
+import si2 from './StoryImage/s5.jpg';
+import si3 from './StoryImage/s6.jpg';
 
 class SuggestionPost extends Component {
   render() {
@@ -36,63 +29,21 @@ class SuggestionProfile extends Component {
         </h6>
 
         <SuggestionPost
-          image={pro1}
-          userName="cs_clonite"
-          text="Suggested for you"
+          image={si1}
+          userName="hackaday"
+          text="New to Instagram"
           follow="follow"
         />
         <SuggestionPost
-          image={pro2}
-          userName="chaalpritam"
-          text="Suggested for you"
+          image={si2}
+          userName="gadgetstricks"
+          text="Followed by shyamala_meth"
           follow="follow"
         />
         <SuggestionPost
-          image={pro3}
-          userName="elon_musk "
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro4}
-          userName="bill_gates"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro5}
-          userName="mark_cuban"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro6}
-          userName="naveenmuccara"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro7}
-          userName="vignesh"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro8}
-          userName="purushoth"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro9}
-          userName="vignesh"
-          text="Suggested for you"
-          follow="follow"
-        />
-        <SuggestionPost
-          image={pro10}
-          userName="purushoth"
-          text="Suggested for you"
+          image={si3}
+          userName="shelmiyer.pcba"
+          text="Follows you"
           follow="follow"
         />
       </div>

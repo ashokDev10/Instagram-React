@@ -3,9 +3,10 @@
 
 .instagram {
   height: 1400px;
+  font-family: 'Helvetica';
   .home-page {
     .insta-body {
-      width: 1080px;
+      width: 1085px;
       margin: auto;
 
       height: 1000px;
@@ -53,92 +54,99 @@
           .story-post {
             height: 250px;
             width: 300px;
-            overflow: auto;
-            padding: 0 0 0 22px;
+
+            padding: 0 0 0 18px;
             background: white;
             border-radius: 4px;
             border: 1px solid rgb(233, 233, 233);
 
             h6 {
+              margin: 16px 0 12px 0;
               small {
                 margin: 0;
                 padding: 0;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: normal;
                 opacity: 0.4;
-                font-family: 'ubuntu';
               }
               span {
                 margin: 0 15px;
                 padding: 0;
-                font-size: 14px;
-
+                font-size: 13px;
                 float: right;
                 font-weight: 600;
-                font-family: 'hind';
               }
             }
 
-            .story-profile {
-              height: 56px;
-              p {
-                padding: 0;
-                margin: 0;
-
-                img {
+            .story-scroll {
+              height: 205px;
+              overflow: auto;
+              .story-profile {
+                height: 58px;
+                p {
                   padding: 0;
-                  height: 46px;
-                  width: 46px;
-                  border-radius: 50%;
                   margin: 0;
-                  float: left;
-                }
-                h5 {
-                  font-size: 16px;
-                  margin: 0 0 2px 70px;
-                  padding: 5px 0 0 0;
 
-                  font-family: 'Days One', sans-serif;
-                }
-                span {
-                  margin: 0 0 0 25px;
+                  div {
+                    height: 42px;
+                    width: 42px;
+                    background: white;
+                    border-radius: 50%;
+                    border: 2px solid rgba(255, 0, 0, 0.856);
+                    img {
+                      margin: 1.7px 0 0 1.5px;
 
-                  font-size: 12px;
-                  font-weight: normal;
-                  text-transform: uppercase;
-                  opacity: 0.4;
-                  font-family: 'Hind', sans-serif;
+                      padding: 0;
+                      height: 38px;
+                      width: 38px;
+                      border-radius: 50%;
+
+                      float: left;
+                    }
+                  }
+                  h5 {
+                    font-size: 15px;
+                    margin: -47px 0 1px 60px;
+                    padding: 5px 0 0 0;
+                  }
+                  span {
+                    margin: 0 0 0 19px;
+
+                    font-size: 11px;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    opacity: 0.4;
+                  }
                 }
               }
             }
           }
           .suggestion-post {
-            height: 250px;
+            height: 228px;
             width: 300px;
-            margin: 20px 0 0 0;
+            margin: 14px 0 0 0;
             overflow: hidden;
-            padding: 0 0 0 22px;
+            padding: 0 0 0 20px;
             background: white;
             border-radius: 4px;
             border: 1px solid rgb(233, 233, 233);
 
             h6 {
+              margin: 15px 0 15px 0;
               small {
                 margin: 0;
                 padding: 0;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: normal;
                 opacity: 0.4;
-                font-family: 'poppins';
               }
               span {
                 margin: 0 15px;
                 padding: 0;
-                font-size: 14px;
-
+                font-size: 13px;
+                opacity: 0.8;
                 float: right;
                 font-weight: 600;
-                font-family: 'hind';
               }
             }
 
@@ -158,25 +166,23 @@
                   float: left;
                 }
                 h5 {
-                  font-size: 16px;
-                  margin: 0 0 2px 70px;
+                  font-size: 15px;
+                  margin: 0 0 3px 62px;
                   padding: 5px 0 0 0;
-                  font-family: 'Days One', sans-serif;
                 }
                 span {
-                  margin: 0 0 0 25px;
-
-                  font-size: 12px;
+                  margin: 0 0 0 16px;
+                  font-size: 13px;
                   font-weight: normal;
                   opacity: 0.4;
-                  font-family: 'poppins', sans-serif;
+                  font-family: 'arial';
                   float: left;
                 }
                 h4 {
-                  margin: -9px 18px 0 0;
-                  font-size: 12px;
+                  margin: -11px 18px 0 0;
+                  font-size: 13px;
                   text-transform: capitalize;
-                  font-family: 'poppins', sans-serif;
+
                   float: right;
                   color: rgba(var(--h5f, 56, 151, 240), 1);
                 }
@@ -188,23 +194,23 @@
             padding-top: 12px;
             p {
               padding: 0;
-              font-family: 'Arimo', sans-serif;
+
               font-size: 13px;
-              margin: 7px 0;
+              margin: 6px 0;
               opacity: 0.2;
               i {
                 padding: 0;
                 vertical-align: middle;
                 font-size: 2px;
-                margin: 0 6px;
+                margin: 0 5px;
               }
             }
             h3 {
-              font-family: 'Arimo', sans-serif;
-              font-size: 12px;
-              letter-spacing: 1px;
-              margin: 14px 0;
+              font-size: 13px;
+              font-weight: normal;
+              margin: 20px 0;
               opacity: 0.2;
+              font-family: 'roboto';
             }
           }
         }
