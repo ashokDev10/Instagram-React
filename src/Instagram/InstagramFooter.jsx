@@ -18,7 +18,7 @@ class InstagramFooter extends Component {
           <li>Hashtags</li>
           <li>language</li>
 
-          <span>@ 2019 INSTAGRAM</span>
+          <span>© 2019 INSTAGRAM</span>
         </ul>
       </div>
     );

@@ -1,8 +1,8 @@
 .instagram-all-footer {
   height: 40px;
   width: 1150px;
-
-  margin: 50px auto 40px auto;
+  font-family: 'Helvetica';
+  margin: 60px auto 40px auto;
   ul {
     padding: 0;
 
@@ -11,18 +11,17 @@
     li {
       font-size: 12px;
       margin: 0 20px 0 0;
-      font-family: 'poppins';
+
       float: left;
-      color: blue;
+      color: rgb(0, 66, 141);
       font-weight: bolder;
     }
     span {
       float: right;
-      font-size: 14px;
+      font-size: 13px;
       margin: 0;
-      font-family: 'poppins';
       color: black;
-      opacity: 0.5;
+      opacity: 0.4;
       font-weight: bolder;
     }
   }
