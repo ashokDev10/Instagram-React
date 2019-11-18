@@ -1,0 +1,154 @@
+.edit-profile-user {
+  .edit-profile-block-right {
+    display: grid;
+    grid-gap: 38px;
+    grid-template-columns: 0.8fr 2.5fr;
+    .eb-left {
+      text-align: right;
+
+      img {
+        padding: 0;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        margin-top: 38px;
+      }
+      h5 {
+        font-size: 18px;
+        opacity: 0.8;
+        margin: 8px 0 0 35px;
+        padding-top: 16px;
+      }
+      h6 {
+        font-size: 18px;
+        opacity: 0.8;
+        margin: 20px 0 0 35px;
+        padding-top: 16px;
+      }
+      #h51 {
+        margin-top: 15px;
+      }
+      #h52 {
+        margin-top: 19px;
+      }
+      #h53 {
+        margin-top: 92px;
+      }
+      #h54 {
+        margin-top: 12px;
+      }
+      #h55 {
+        margin-top: 12px;
+      }
+      #h56 {
+        margin-top: 15px;
+      }
+    }
+    .eb-right {
+      h3 {
+        font-size: 22px;
+        opacity: 0.8;
+        font-weight: normal;
+        margin: 38px 0 4px 0;
+      }
+      span {
+        font-size: 15px;
+        font-weight: 600;
+        color: #3897f0;
+        margin: 0;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 0;
+          list-style-type: none;
+          text-transform: capitalize;
+          font-size: 20px;
+          margin: 3px 0 3px 0;
+          padding-top: 16px;
+          input {
+            border-radius: 4px;
+            border: 1px solid rgb(240, 240, 240);
+            height: 30px;
+            width: 365px;
+            font-size: 16px;
+            font-family: 'Helvetica';
+            padding-left: 12px;
+            opacity: 0.8;
+          }
+          textarea {
+            border-radius: 4px;
+            border: 1px solid rgb(240, 240, 240);
+            height: 64px;
+            width: 365px;
+            overflow-y: scroll;
+            font-size: 16px;
+            font-family: 'Helvetica';
+            padding-left: 12px;
+            opacity: 0.8;
+          }
+          h6 {
+            margin: 0;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            color: rgb(83, 49, 49);
+            opacity: 0.7;
+          }
+          small {
+            margin: 0;
+
+            font-size: 16px;
+            opacity: 0.8;
+            font-weight: normal;
+          }
+        }
+      }
+      #check {
+        margin: 44px 12px 0 0;
+        width: 21px;
+        height: 21px;
+        float: left;
+      }
+      p {
+        width: 320px;
+        margin-top: 28px;
+        font-family: 'poppins';
+        line-height: 1.2;
+        font-size: 16px;
+        font-weight: 600;
+        span {
+          margin: 0 4px;
+          font-size: 16px;
+
+          font-weight: 600;
+        }
+      }
+      button {
+        margin: 28px 0 40px 0;
+        padding: 0;
+        width: 80px;
+        height: 32px;
+        background: #3897f0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: capitalize;
+        border: none;
+        border-radius: 4px;
+        float: left;
+        outline: none;
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 14px;
+        color: #3897f0;
+
+        letter-spacing: 0.5px;
+        margin: 56px 0 0 160px;
+      }
+    }
+  }
+}

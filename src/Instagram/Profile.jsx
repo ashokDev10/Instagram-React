@@ -55,10 +55,7 @@ class ProfileBlock extends Component {
         <div className="p-right">
           <h3>khrist_yohan</h3>
           <div>
-            <Link
-              to="/insta/profile/EditProfile"
-              style={{ textDecoration: 'none' }}
-            >
+            <Link to="/insta/profile/edit" style={{ textDecoration: 'none' }}>
               <small>Edit Profile</small>
             </Link>
           </div>

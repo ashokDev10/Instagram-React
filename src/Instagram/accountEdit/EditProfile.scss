@@ -1,0 +1,44 @@
+.edit-profile-page {
+  width: 1040px;
+  margin: auto;
+  font-family: 'Helvetica';
+  .edit-profile-block-left {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 3.3fr;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 4px;
+    .EP-left {
+      border-right: 1px solid rgb(216, 216, 216);
+      div {
+        height: 50px;
+
+        border-left: 2px solid black;
+        h3 {
+          font-size: 18px;
+          color: black;
+          margin: 0 0 0 35px;
+          padding-top: 16px;
+        }
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          height: 38px;
+          border-left: 2px solid white;
+          list-style-type: none;
+          text-transform: capitalize;
+          font-size: 18px;
+          margin: 0 0 0;
+          padding: 20px 0 0 35px;
+          opacity: 0.8;
+        }
+        li:hover {
+          border-left: 2px solid rgb(216, 216, 216);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

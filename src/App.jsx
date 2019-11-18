@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Instagram from './Instagram/Instagram';
 import DiscoverExplore from './Instagram/DiscoverExplore';
 import Profile from './Instagram/Profile';
-import EditProfile from './Instagram/EditProfile';
-import IGTV from './Instagram/IGTV';
+import EditProfile from './Instagram/accountEdit/EditProfile';
+
 import Login from './Instagram/Login';
 import InstaComment from './Instagram/InstaComment';
 
@@ -41,11 +41,8 @@ class App extends React.Component {
             <Route exact path="/insta/profile/igtv" component={Profile} />
             <Route exact path="/insta/profile/saved" component={Profile} />
             <Route exact path="/insta/profile/tagged" component={Profile} />
-            <Route
-              exact
-              path="/insta/profile/EditProfile"
-              component={EditProfile}
-            />
+            <Route exact path="/insta/profile/edit" component={EditProfile} />
+            <Route exact path="/profile/edit/" component={EditProfile} />
 
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
