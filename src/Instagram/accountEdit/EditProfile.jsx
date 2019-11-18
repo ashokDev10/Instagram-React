@@ -3,6 +3,7 @@ import './EditProfile.scss';
 import EditProfileUser from './EditProfileUser';
 import ChangePassword from './ChangePassword';
 import Website from './Website';
+import Email from './Email';
 
 import InstaHead from '../InstaHead';
 import InstagramFooter from '../InstagramFooter';
@@ -11,6 +12,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 const edit = () => <EditProfileUser />;
 const password = () => <ChangePassword />;
 const website = () => <Website />;
+const email = () => <Email />;
 
 class EditProfile extends Component {
   render() {
@@ -27,6 +29,10 @@ class EditProfile extends Component {
               {
                 text: 'Apps And Website',
                 link: '/profile/manage_access/'
+              },
+              {
+                text: 'Email And SMS',
+                link: '/emails/settings/'
               }
             ]}
           />
@@ -70,6 +76,7 @@ class EditProfileBlockLeft extends Component {
           <Route exact path="/profile/edit" component={edit} />
           <Route exact path="/profile/password/change/" component={password} />
           <Route exact path="/profile/manage_access/" component={website} />
+          <Route exact path="/emails/settings/" component={email} />
         </Switch>
       </div>
     );

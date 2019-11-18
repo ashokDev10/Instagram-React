@@ -1,0 +1,38 @@
+.emails-and-sms {
+  margin: 10px 0 0 74px;
+  font-family: 'Helvetica';
+  h3 {
+    font-size: 26px;
+    margin: 18px 0 34px 0;
+    font-weight: normal;
+    opacity: 0.8;
+  }
+  .emails-block {
+    .email-box {
+      height: 78px;
+
+      input {
+        width: 18px;
+        height: 18px;
+        margin: 0 0 0 6px;
+        float: left;
+        background: white;
+        text-decoration: none;
+        outline: none;
+        border: none;
+      }
+      p {
+        margin: 0 0 0 34px;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 2px;
+      }
+      h6 {
+        font-size: 15px;
+        margin: 8px 0 0 0;
+        opacity: 0.4;
+        font-weight: normal;
+      }
+    }
+  }
+}
