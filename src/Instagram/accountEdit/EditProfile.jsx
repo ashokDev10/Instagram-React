@@ -4,6 +4,7 @@ import EditProfileUser from './EditProfileUser';
 import ChangePassword from './ChangePassword';
 import Website from './Website';
 import Email from './Email';
+import ManageContacts from './ManageContacts';
 
 import InstaHead from '../InstaHead';
 import InstagramFooter from '../InstagramFooter';
@@ -13,6 +14,7 @@ const edit = () => <EditProfileUser />;
 const password = () => <ChangePassword />;
 const website = () => <Website />;
 const email = () => <Email />;
+const contacts = () => <ManageContacts />;
 
 class EditProfile extends Component {
   render() {
@@ -33,6 +35,10 @@ class EditProfile extends Component {
               {
                 text: 'Email And SMS',
                 link: '/emails/settings/'
+              },
+              {
+                text: 'Manage Contacts',
+                link: '/profile/contacthistory/'
               }
             ]}
           />
@@ -64,9 +70,6 @@ class EditProfileBlockLeft extends Component {
           ))}
 
           <ul>
-            <li>Apps and Website</li>
-            <li>Email and SMS</li>
-            <li>Manage Contacts</li>
             <li>Privacy and</li>
             <li>Login Activity</li>
             <li>Emails from Instagram</li>
@@ -77,6 +80,7 @@ class EditProfileBlockLeft extends Component {
           <Route exact path="/profile/password/change/" component={password} />
           <Route exact path="/profile/manage_access/" component={website} />
           <Route exact path="/emails/settings/" component={email} />
+          <Route exact path="/profile/contacthistory/" component={contacts} />
         </Switch>
       </div>
     );

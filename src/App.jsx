@@ -53,7 +53,13 @@ class App extends React.Component {
               path="/profile/manage_access/"
               component={EditProfile}
             />
+
             <Route exact path="/emails/settings/" component={EditProfile} />
+            <Route
+              exact
+              path="/profile/contacthistory/"
+              component={EditProfile}
+            />
 
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
