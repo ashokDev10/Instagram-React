@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './EditProfile.scss';
 import EditProfileUser from './EditProfileUser';
 import ChangePassword from './ChangePassword';
+import Website from './Website';
 
 import InstaHead from '../InstaHead';
 import InstagramFooter from '../InstagramFooter';
@@ -9,6 +10,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 
 const edit = () => <EditProfileUser />;
 const password = () => <ChangePassword />;
+const website = () => <Website />;
 
 class EditProfile extends Component {
   render() {
@@ -21,6 +23,10 @@ class EditProfile extends Component {
               {
                 text: 'change password',
                 link: '/profile/password/change'
+              },
+              {
+                text: 'Apps And Website',
+                link: '/profile/manage_access/'
               }
             ]}
           />
@@ -63,6 +69,7 @@ class EditProfileBlockLeft extends Component {
         <Switch>
           <Route exact path="/profile/edit" component={edit} />
           <Route exact path="/profile/password/change/" component={password} />
+          <Route exact path="/profile/manage_access/" component={website} />
         </Switch>
       </div>
     );
