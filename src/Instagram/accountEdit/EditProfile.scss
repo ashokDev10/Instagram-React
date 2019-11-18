@@ -1,5 +1,5 @@
 .edit-profile-page {
-  width: 1040px;
+  width: 1030px;
   margin: auto;
   font-family: 'Helvetica';
   .edit-profile-block-left {
@@ -11,7 +11,7 @@
     .EP-left {
       border-right: 1px solid rgb(216, 216, 216);
       div {
-        height: 50px;
+        height: 56px;
 
         border-left: 2px solid black;
         h3 {
@@ -21,9 +21,11 @@
           padding-top: 16px;
         }
       }
+
       ul {
         padding: 0;
         margin: 0;
+
         li {
           height: 38px;
           border-left: 2px solid white;
@@ -33,10 +35,15 @@
           margin: 0 0 0;
           padding: 20px 0 0 35px;
           opacity: 0.8;
+          color: black;
+          text-decoration: none;
         }
         li:hover {
           border-left: 2px solid rgb(216, 216, 216);
           cursor: pointer;
+          opacity: 1;
+          color: black;
+          font-weight: bold;
         }
       }
     }

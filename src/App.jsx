@@ -41,8 +41,13 @@ class App extends React.Component {
             <Route exact path="/insta/profile/igtv" component={Profile} />
             <Route exact path="/insta/profile/saved" component={Profile} />
             <Route exact path="/insta/profile/tagged" component={Profile} />
-            <Route exact path="/insta/profile/edit" component={EditProfile} />
-            <Route exact path="/profile/edit/" component={EditProfile} />
+            <Route exact path="/profile/edit" component={EditProfile} />
+
+            <Route
+              exact
+              path="/profile/password/change/"
+              component={EditProfile}
+            />
 
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
