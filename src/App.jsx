@@ -60,6 +60,7 @@ class App extends React.Component {
               path="/profile/contacthistory/"
               component={EditProfile}
             />
+            <Route exact path="/emails/emailssent/" component={EditProfile} />
 
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>
