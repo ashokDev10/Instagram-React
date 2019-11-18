@@ -3,6 +3,7 @@ import './Profile.scss';
 import Post from './ExplorePost';
 import IGTV from './IGTV';
 import SavePost from './SavePost';
+import TaggedPost from './TaggedPost';
 import post from './comImage/post.png';
 import igtv from './comImage/igtv.png';
 import save from './comImage/save.png';
@@ -24,7 +25,7 @@ import InstagramFooter from './InstagramFooter';
 const Posts = () => <Post />;
 const Igtv = () => <IGTV />;
 const Saved = () => <SavePost />;
-const Tagged = () => <p>tagged</p>;
+const Tagged = () => <TaggedPost />;
 
 const ProfileGallery = ({ list }) => (
   <div className="profile-gallery-head">
