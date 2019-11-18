@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Profile.scss';
 import Post from './ExplorePost';
 import IGTV from './IGTV';
+import SavePost from './SavePost';
 import post from './comImage/post.png';
 import igtv from './comImage/igtv.png';
 import save from './comImage/save.png';
@@ -22,7 +23,7 @@ import InstagramFooter from './InstagramFooter';
 
 const Posts = () => <Post />;
 const Igtv = () => <IGTV />;
-const Saved = () => <p>saved</p>;
+const Saved = () => <SavePost />;
 const Tagged = () => <p>tagged</p>;
 
 const ProfileGallery = ({ list }) => (

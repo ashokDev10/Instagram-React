@@ -24,7 +24,7 @@ import pi20 from './postImage/p20.jpg';
 import pi21 from './postImage/p21.jpg';
 import pi22 from './postImage/p22.jpg';
 import pi23 from './postImage/p23.jpg';
-import pi24 from './postImage/p24.jpg';
+import pi24 from './postImage/p25.jpg';
 
 class IGTV extends Component {
   render() {
