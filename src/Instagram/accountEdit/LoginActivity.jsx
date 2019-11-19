@@ -151,39 +151,102 @@ class MapBlock extends Component {
   }
 }
 class LocationBlock extends Component {
+  state = {
+    changebutton: false
+  };
+  changeMap = () =>
+    this.setState(({ changebutton }) => ({ changebutton: !changebutton }));
   render() {
     const { locationlist } = this.props;
+    const { changebutton } = this.state;
     return (
       <div className="location-block">
         <h4>Where You're Logged in</h4>
-        <div className="place">
-          <div className="icon">
-            <i  class="fas fa-map-marker-alt"></i>
-          </div>
-          <div className="text1">
-            <h5>vellore</h5>
-            <p>
-              active now
-              <i id="i1" class="fas fa-circle"></i>
-              <span>this ubuntu</span>
-            </p>
-            <i id="i2" class="fas fa-chevron-down"></i>
-          </div>
-        </div>
-        {locationlist.map(ll => (
-          <div className="place">
+        <div className="place1">
+          <div className="grid1">
             <div className="icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div className="text2">
-              <h5>{ll.text1}</h5>
+            <div className="text1">
+              <h5>vellore</h5>
               <p>
-                {ll.text2}
+                active now
                 <i id="i1" class="fas fa-circle"></i>
-                <span>{ll.text3}</span>
+                <span>this ubuntu</span>
               </p>
-              <i id="i2" class="fas fa-chevron-down"></i>
+              {changebutton ? (
+                <i
+                  id="i2"
+                  class="fas fa-chevron-up"
+                  onClick={this.changeMap}
+                ></i>
+              ) : (
+                <i
+                  id="i2"
+                  class="fas fa-chevron-down"
+                  onClick={this.changeMap}
+                ></i>
+              )}
             </div>
+          </div>
+          {changebutton ? (
+            <div className="map">
+              <iframe
+                title="footer-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.441972792331!2d79.1329408148217!3d12.943546190874326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad39a0f37f3acf%3A0x7076bf027ae0eb77!2sAtsemicolon%20Technologies%20Training%20Academy!5e0!3m2!1sen!2sin!4v1568034201791!5m2!1sen!2sin"
+                allowFullScreen=""
+              />
+              <p>Log Out</p>
+            </div>
+          ) : (
+            ' '
+          )}
+
+          <hr className="hr1" />
+        </div>
+
+        {locationlist.map(ll => (
+          <div className="place2">
+            <div className="grid2">
+              <div className="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div className="text2">
+                <h5>{ll.text1}</h5>
+                <p>
+                  {ll.text2}
+                  <i id="i1" class="fas fa-circle"></i>
+                  <span>{ll.text3}</span>
+                </p>
+                {changebutton ? (
+                  <i
+                    id="i2"
+                    class="fas fa-chevron-up"
+                    onClick={this.changeMap}
+                  ></i>
+                ) : (
+                  <i
+                    id="i2"
+                    class="fas fa-chevron-down"
+                    onClick={this.changeMap}
+                  ></i>
+                )}
+              </div>
+            </div>
+
+            {changebutton ? (
+              <div className="map">
+                <iframe
+                  title="footer-map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.441972792331!2d79.1329408148217!3d12.943546190874326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad39a0f37f3acf%3A0x7076bf027ae0eb77!2sAtsemicolon%20Technologies%20Training%20Academy!5e0!3m2!1sen!2sin!4v1568034201791!5m2!1sen!2sin"
+                  allowFullScreen=""
+                />
+                <p>Log Out</p>
+              </div>
+            ) : (
+              ' '
+            )}
+            <hr className="hr1" />
           </div>
         ))}
       </div>
