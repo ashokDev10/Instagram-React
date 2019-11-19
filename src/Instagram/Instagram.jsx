@@ -7,6 +7,7 @@ import StoryPost from './StoryPost';
 import SuggestionProfile from './SuggestionProfile';
 import pro from './images/my_dp.jpg';
 import InstaHead from './InstaHead';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
@@ -21,8 +22,13 @@ class HomePage extends Component {
           <div className="profile-stories">
             <div className="profile">
               <p>
-                <img src={pro} alt="" />
-                <h5>khrist_yohan</h5>
+                <Link to="/insta/profile" style={{ textDecoration: 'none' }}>
+                  <img src={pro} alt="" />
+                </Link>
+                <Link to="/insta/profile" style={{ textDecoration: 'none' }}>
+                  <h5>khrist_yohan</h5>
+                </Link>
+
                 <span>Khrist YohaN</span>
                 <b>😍👨‍⚖️🧕</b>
               </p>

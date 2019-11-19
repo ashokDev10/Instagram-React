@@ -3,6 +3,7 @@ import './App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Instagram from './Instagram/Instagram';
 import DiscoverExplore from './Instagram/DiscoverExplore';
+import Suggested from './Instagram/Suggested';
 import Profile from './Instagram/Profile';
 import EditProfile from './Instagram/accountEdit/EditProfile';
 
@@ -35,6 +36,11 @@ class App extends React.Component {
               exact
               path="/insta/discover-explore"
               component={DiscoverExplore}
+            />
+            <Route
+              exact
+              path="/explore/people/suggested/"
+              component={Suggested}
             />
             <Route exact path="/insta/profile" component={Profile} />
 

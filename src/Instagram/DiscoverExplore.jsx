@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './DiscoverExplore.scss';
+
+import { Link } from 'react-router-dom';
 import si1 from './StoryImage/s1.jpg';
 import si2 from './StoryImage/s2.jpg';
 import si3 from './StoryImage/s3.jpg';
@@ -14,7 +16,10 @@ class DiscoverPeople extends Component {
     return (
       <div className="discover-page">
         <p>
-          <span id="t1">Discover People</span> <span id="t2">See All</span>
+          <span id="t1">Discover People</span>
+          <Link to="/explore/people/suggested/">
+            <span id="t2">See All</span>
+          </Link>
         </p>
         <div className="discover-block">
           <DiscoverBlock
