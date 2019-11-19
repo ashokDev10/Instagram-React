@@ -13,7 +13,7 @@ class InstaHead extends Component {
         <div className="header-block">
           <div className="app-name">
             <div>
-              <Link to="./" style={{ textDecoration: 'none' }}>
+              <Link to="/insta" style={{ textDecoration: 'none' }}>
                 <i className="fa fa-instagram" />
               </Link>
             </div>

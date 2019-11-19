@@ -6,6 +6,7 @@ import Website from './Website';
 import Email from './Email';
 import ManageContacts from './ManageContacts';
 import EmailsFromInsta from './EmailsFromInsta';
+import LoginActivity from './LoginActivity';
 
 import InstaHead from '../InstaHead';
 import InstagramFooter from '../InstagramFooter';
@@ -17,6 +18,7 @@ const website = () => <Website />;
 const email = () => <Email />;
 const contacts = () => <ManageContacts />;
 const emailssent = () => <EmailsFromInsta />;
+const login = () => <LoginActivity />;
 
 class EditProfile extends Component {
   render() {
@@ -48,7 +50,7 @@ class EditProfile extends Component {
               },
               {
                 text: 'Login Activity',
-                link: '/profile/contacthistory/'
+                link: '/session/loginactivity/'
               },
               {
                 text: 'Emails from Instagram',
@@ -90,6 +92,7 @@ class EditProfileBlockLeft extends Component {
           <Route exact path="/emails/settings/" component={email} />
           <Route exact path="/profile/contacthistory/" component={contacts} />
           <Route exact path="/emails/emailssent" component={emailssent} />
+          <Route exact path="/session/loginactivity/" component={login} />
         </Switch>
       </div>
     );
