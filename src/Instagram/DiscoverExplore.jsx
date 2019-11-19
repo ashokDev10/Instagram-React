@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import './DiscoverExplore.scss';
-import pro1 from './images/p1.jpeg';
-import pro2 from './images/p2.jpeg';
-import pro3 from './images/p3.jpeg';
-import pro4 from './images/p4.jpeg';
-import pro5 from './images/p5.jpeg';
-import pro6 from './images/p6.jpeg';
-import pro7 from './images/p7.jpeg';
-import pro8 from './images/p8.jpeg';
-import pro9 from './images/p9.jpeg';
-import pro10 from './images/p10.jpeg';
+import si1 from './StoryImage/s1.jpg';
+import si2 from './StoryImage/s2.jpg';
+import si3 from './StoryImage/s3.jpg';
+import si4 from './StoryImage/s4.jpg';
+import si5 from './StoryImage/s5.jpg';
 import Post from './ExplorePost';
 import InstaHead from './InstaHead';
+import InstagramFooter from './InstagramFooter';
 
 class DiscoverPeople extends Component {
   render() {
@@ -21,6 +17,42 @@ class DiscoverPeople extends Component {
           <span id="t1">Discover People</span> <span id="t2">See All</span>
         </p>
         <div className="discover-block">
+          <DiscoverBlock
+            discoverlist={[
+              {
+                image: si1,
+                userName: 'cs_clonite',
+                text: 'New to Instagram',
+                follow: 'follow'
+              },
+              {
+                image: si2,
+                userName: 'googleindia',
+                text: 'Suggested for you',
+                follow: 'follow'
+              },
+              {
+                image: si3,
+                userName: 'gadgetstricks',
+                text: 'Suggested for you',
+                follow: 'follow'
+              },
+              {
+                image: si4,
+                userName: 'shelmiyer.pcba',
+                text: 'New to Instagram',
+                follow: 'follow'
+              },
+              {
+                image: si5,
+                userName: 'i.m.pratikdabhi',
+                text: 'Suggested for you',
+                follow: 'follow'
+              }
+            ]}
+          />
+
+          {/* 
           <DiscoverBlock
             image={pro1}
             userName="cs_clonite"
@@ -80,7 +112,7 @@ class DiscoverPeople extends Component {
             userName="purushoth"
             text="Suggested for you"
             follow="follow"
-          />
+          /> */}
         </div>
       </div>
     );
@@ -89,13 +121,17 @@ class DiscoverPeople extends Component {
 
 class DiscoverBlock extends Component {
   render() {
-    const { image, userName, text, follow } = this.props;
+    const { discoverlist } = this.props;
     return (
       <div className="discover-post">
-        <img src={image} alt="" />
-        <h5>{userName}</h5>
-        <p>{text}</p>
-        <button>{follow}</button>
+        {discoverlist.map(dl => (
+          <div className="post-list">
+            <img src={dl.image} alt="" />
+            <h5>{dl.userName}</h5>
+            <p>{dl.text}</p>
+            <button>{dl.follow}</button>
+          </div>
+        ))}
       </div>
     );
   }
@@ -121,6 +157,7 @@ class DiscoverExplore extends Component {
           <DiscoverPeople />
           <ExplorePage />
         </div>
+        <InstagramFooter />
       </div>
     );
   }
