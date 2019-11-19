@@ -66,6 +66,11 @@ class App extends React.Component {
               path="/session/loginactivity/"
               component={EditProfile}
             />
+            <Route
+              exact
+              path="/accounts/privacysecurity/"
+              component={EditProfile}
+            />
 
             <Route exact path="/insta/comment" component={InstaComment} />
           </Switch>

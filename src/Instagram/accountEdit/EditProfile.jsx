@@ -7,6 +7,7 @@ import Email from './Email';
 import ManageContacts from './ManageContacts';
 import EmailsFromInsta from './EmailsFromInsta';
 import LoginActivity from './LoginActivity';
+import PrivacySecurity from './PrivacySecurity';
 
 import InstaHead from '../InstaHead';
 import InstagramFooter from '../InstagramFooter';
@@ -19,6 +20,7 @@ const email = () => <Email />;
 const contacts = () => <ManageContacts />;
 const emailssent = () => <EmailsFromInsta />;
 const login = () => <LoginActivity />;
+const security = () => <PrivacySecurity />;
 
 class EditProfile extends Component {
   render() {
@@ -45,8 +47,8 @@ class EditProfile extends Component {
                 link: '/profile/contacthistory/'
               },
               {
-                text: 'Privacy and',
-                link: '/profile/contacthistory/'
+                text: 'Privacy and Security',
+                link: '/accounts/privacysecurity/'
               },
               {
                 text: 'Login Activity',
@@ -93,6 +95,7 @@ class EditProfileBlockLeft extends Component {
           <Route exact path="/profile/contacthistory/" component={contacts} />
           <Route exact path="/emails/emailssent" component={emailssent} />
           <Route exact path="/session/loginactivity/" component={login} />
+          <Route exact path="/accounts/privacysecurity/" component={security} />
         </Switch>
       </div>
     );
