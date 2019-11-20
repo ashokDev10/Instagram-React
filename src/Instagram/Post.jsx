@@ -74,7 +74,7 @@ class Img extends Component {
     return <img src={image} alt="" />;
   }
 }
-class Icons extends Component {
+export class Icons extends Component {
   state = {
     commentInput: '',
     postButton: true
@@ -112,7 +112,7 @@ class Icons extends Component {
           <span role="img"> What do you think? 😞🔥</span>
           <i id="i1" className="far fa-heart" />
         </h5>
-        <Link to="./comment" style={{ textDecoration: 'none' }}>
+        <Link to="/insta/comment/" style={{ textDecoration: 'none' }}>
           <h4>View all 57 comments</h4>
         </Link>
 

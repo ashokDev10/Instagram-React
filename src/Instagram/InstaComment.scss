@@ -1,20 +1,18 @@
 .insta-comment-page {
-  background: red;
   .insta-comment-block {
+    font-family: 'Helvetica';
     width: 1015px;
-    height: 700px;
-    background: yellow;
+    height: 640px;
+
     margin: 0 auto 80px auto;
     .insta-comment-box {
       width: 1015px;
 
-      background: rgb(0, 204, 255);
       display: grid;
       grid-template-columns: 3.1fr 2fr;
       border: 1px solid rgb(243, 243, 243);
       border-radius: 4px;
       .insta-comment-left {
-        background: yellowgreen;
         height: 600px;
         img {
           margin: 0;
@@ -23,7 +21,6 @@
         }
       }
       .insta-comment-right {
-        background: deeppink;
         .user-comment-profile {
           border-top-right-radius: 4px;
           height: 75px;
@@ -43,7 +40,7 @@
             padding: 20px 0 0 72px;
 
             font-size: 15px;
-            font-family: 'Helvetica';
+
             font-weight: 600;
 
             b {
@@ -75,30 +72,136 @@
             font-family: 'Arial';
           }
         }
-        .user-comment {
-          height: 75px;
+        .all-comments {
+          overflow: auto;
+          text-decoration: none;
+          height: 350px;
+          .user-comment {
+            display: grid;
+            grid-template-columns: 1fr 8fr;
+            .img {
+              img {
+                margin: 12px 0 0 12px;
+                padding: 0;
+                height: 46px;
+                width: 46px;
+                border-radius: 50%;
+                float: left;
+                border: 3px solid red;
+              }
+            }
 
-          img {
-            margin: 12px 0 0 12px;
-            padding: 0;
-            height: 46px;
-            width: 46px;
-            border-radius: 50%;
-            float: left;
-            border: 3px solid red;
+            .details {
+              margin: 0 0 0 12px;
+              #p1 {
+                margin: 0;
+                padding: 20px 0 0 0;
+                font-size: 15px;
+                font-family: 'Helvetica';
+                font-weight: 600;
+
+                span {
+                  font-weight: normal;
+                  font-size: 15px;
+                  margin: 0 0 0 10px;
+                  opacity: 0.8;
+                }
+              }
+              #p2 {
+                margin: 0;
+                padding: 5px 0 0 0;
+                font-size: 15px;
+                font-family: 'Helvetica';
+                font-weight: normal;
+                opacity: 0.8;
+                span {
+                  margin: 10px 0;
+                  font-weight: normal;
+                  font-size: 16px;
+                  opacity: 1;
+                  color: #003569;
+                }
+              }
+              #p3 {
+                margin: 4px 0;
+                font-weight: normal;
+                font-size: 16px;
+                opacity: 1;
+                color: #003569;
+              }
+              #p4 {
+                margin: 10px 0;
+                font-weight: normal;
+                font-size: 16px;
+                opacity: 0.4;
+              }
+            }
           }
+          .visitor-comment {
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: 2.1fr 6.8fr 1fr;
+            .pro {
+              margin: 0;
+              img {
+                margin: 0 0 10px 12px;
+                padding: 0;
+                height: 46px;
+                width: 46px;
+                border-radius: 50%;
+                float: left;
+              }
+            }
 
-          p {
-            margin: 0;
-            padding: 20px 0 0 72px;
-            font-size: 15px;
-            font-family: 'Helvetica';
-            font-weight: 600;
+            .detail {
+              margin: 0 10px 0 0;
+              #p1 {
+                margin: 0;
+                padding: 0 0 0 0;
+                font-size: 15px;
+                font-family: 'Helvetica';
+                font-weight: 600;
 
-            span {
-              font-weight: normal;
-              font-size: 16px;
-              font-family: 'Helvetica';
+                span {
+                  font-weight: normal;
+                  font-size: 15px;
+                  margin: 0 10px 0 10px;
+                  opacity: 0.8;
+                  text-transform: capitalize;
+                  line-height: 1.5;
+                }
+                i {
+                  float: right;
+                }
+              }
+              #p2 {
+                margin: 10px 0 0 0;
+                #s1 {
+                  margin: 0 10px 0 0;
+                  font-weight: normal;
+                  font-size: 16px;
+                  opacity: 0.4;
+                }
+                #s2 {
+                  margin: 0 20px 10px 10px;
+                  font-weight: 600;
+                  font-size: 14px;
+                  opacity: 0.4;
+                }
+                #s3 {
+                  margin: 0 10px 10px 0;
+                  font-weight: bold;
+                  font-size: 13px;
+                  opacity: 0.6;
+                }
+              }
+            }
+            .like {
+              i {
+                margin: 18px 0 0 0;
+                font-size: 13px;
+                opacity: 0.4;
+              }
             }
           }
         }

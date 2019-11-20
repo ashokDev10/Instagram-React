@@ -78,7 +78,7 @@ class App extends React.Component {
               component={EditProfile}
             />
 
-            <Route exact path="/insta/comment" component={InstaComment} />
+            <Route exact path="/insta/comment/" component={InstaComment} />
           </Switch>
         </BrowserRouter>
       </div>
