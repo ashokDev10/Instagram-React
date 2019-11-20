@@ -59,7 +59,7 @@ class LoginFormBlock extends Component {
         </div>
         <div className="signup-press">
           <p>
-            Have an account?
+            Don't have an account?
             <Link to="/" style={{ textDecoration: 'none' }}>
               <span>Sign up </span>
             </Link>

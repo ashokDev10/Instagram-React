@@ -27,24 +27,6 @@ const Igtv = () => <IGTV />;
 const Saved = () => <SavePost />;
 const Tagged = () => <TaggedPost />;
 
-const ProfileGallery = ({ list }) => (
-  <div className="profile-gallery-head">
-    <div></div>
-    {list.map(l => (
-      <Link
-        to={l.text === 'posts' ? '/insta/profile' : `/insta/profile/${l.text}`}
-      >
-        <div className="list-grid">
-          <img src={l.photo} alt="" />
-          <p>{l.text}</p>
-        </div>
-      </Link>
-    ))}
-
-    <div></div>
-  </div>
-);
-
 class ProfileBlock extends Component {
   render() {
     return (
@@ -118,19 +100,19 @@ class PostBlock extends Component {
           <ProfileGallery
             list={[
               {
-                photo: post,
+                photo: 'fas fa-th',
                 text: 'posts'
               },
               {
-                photo: igtv,
+                photo: 'fas fa-tv',
                 text: 'igtv'
               },
               {
-                photo: save,
+                photo: 'far fa-bookmark',
                 text: 'saved'
               },
               {
-                photo: tag,
+                photo: 'fas fa-id-card',
                 text: 'tagged'
               }
             ]}
@@ -151,6 +133,23 @@ class PostBlock extends Component {
     );
   }
 }
+const ProfileGallery = ({ list }) => (
+  <div className="profile-gallery-head">
+    <div></div>
+    {list.map(l => (
+      <Link
+        to={l.text === 'posts' ? '/insta/profile' : `/insta/profile/${l.text}`}
+      >
+        <div className="list-grid">
+          <i className={l.photo} />
+          <p style={{ textDecoration: 'none' }}>{l.text}</p>
+        </div>
+      </Link>
+    ))}
+
+    <div></div>
+  </div>
+);
 
 class ProfilePage extends Component {
   render() {

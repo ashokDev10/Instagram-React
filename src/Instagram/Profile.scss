@@ -123,37 +123,46 @@
         display: grid;
         grid-gap: 45px;
         grid-template-columns: 3fr 1fr 1fr 1fr 1.1fr 3fr;
-        .list-grid {
-          margin: 0;
-          padding: 0;
-          height: 55px;
-          border-top: 1px solid rgb(245, 245, 245);
-
-          transition-duration: 0.3s;
-          img {
-            height: 20px;
-            width: 14px;
-            height: 14px;
-            margin: 18px 6px 0 0;
-            float: left;
-          }
-          p {
-            height: 20px;
+        a {
+          text-decoration: none;
+          .list-grid {
             margin: 0;
-            padding: 16px 6px 0 0;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: bold;
-            opacity: 0.5;
+            padding: 0;
+            height: 55px;
+            border-top: 1px solid rgb(245, 245, 245);
+
             transition-duration: 0.3s;
-            color: black;
+
+            i {
+              font-size: 14px;
+              margin: 18px 8px 0 0;
+              float: left;
+              color: black;
+              opacity: 0.5;
+              transition-duration: 0.3s;
+            }
+            p {
+              height: 20px;
+              margin: 0;
+              padding: 15px 6px 0 0;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 15px;
+              font-weight: bold;
+              opacity: 0.5;
+              transition-duration: 0.3s;
+              color: black;
+            }
           }
         }
+
         .list-grid:hover {
           border-top: 1px solid black;
         }
         .list-grid:hover p {
+          opacity: 0.8;
+        }
+        .list-grid:hover i {
           opacity: 0.8;
         }
       }

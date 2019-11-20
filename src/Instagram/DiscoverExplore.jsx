@@ -47,12 +47,6 @@ class DiscoverPeople extends Component {
                 userName: 'shelmiyer.pcba',
                 text: 'New to Instagram',
                 follow: 'follow'
-              },
-              {
-                image: si5,
-                userName: 'i.m.pratikdabhi',
-                text: 'Suggested for you',
-                follow: 'follow'
               }
             ]}
           />
@@ -137,6 +131,13 @@ class DiscoverBlock extends Component {
             <button>{dl.follow}</button>
           </div>
         ))}
+
+        <div className="end-post">
+          <img src={si5} alt="" />
+          <h5>i.m.pratikdabhi</h5>
+          <p>Suggested for you'</p>
+          <button>follow</button>
+        </div>
       </div>
     );
   }
