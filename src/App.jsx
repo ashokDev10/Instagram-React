@@ -7,6 +7,7 @@ import Suggested from './Instagram/Suggested';
 import Profile from './Instagram/Profile';
 import EditProfile from './Instagram/accountEdit/EditProfile';
 
+import Signup from './Instagram/Signup';
 import Login from './Instagram/Login';
 import InstaComment from './Instagram/InstaComment';
 
@@ -30,7 +31,8 @@ class App extends React.Component {
         <BrowserRouter>
           {/* <Navigation menus={menu} /> */}
           <Switch>
-            <Route exact path="/" component={Login} />
+            <Route exact path="/" component={Signup} />
+            <Route exact path="/account/login/" component={Login} />
             <Route exact path="/insta" component={Instagram} />
             <Route
               exact
