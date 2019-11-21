@@ -2,14 +2,13 @@
 // "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 
 .instagram {
-  height: 1400px;
+  background: red;
   font-family: 'Helvetica';
   .home-page {
     .insta-body {
       width: 1085px;
-      margin: auto;
+      margin: 0 auto 50px auto;
 
-      height: 1000px;
       display: grid;
       grid-template-columns: 2.1fr 1fr;
       font-family: 'Helvetica';

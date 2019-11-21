@@ -8,6 +8,7 @@ import SuggestionProfile from './SuggestionProfile';
 import pro from './images/my_dp.jpg';
 import InstaHead from './InstaHead';
 import { Link } from 'react-router-dom';
+import HomePost from './HomePost';
 
 class HomePage extends Component {
   render() {
@@ -18,6 +19,7 @@ class HomePage extends Component {
         <div className="insta-body">
           <div className="insta-post">
             <Post />
+            <HomePost />
           </div>
           <div className="profile-stories">
             <div className="profile">
