@@ -18,7 +18,6 @@ class HomePage extends Component {
 
         <div className="insta-body">
           <div className="insta-post">
-            <Post />
             <HomePost />
           </div>
           <div className="profile-stories">

@@ -5,22 +5,19 @@ import Like from './Like';
 import Comment from './Comment';
 import Share from './Share';
 import Save from './Save';
-import hp1 from './HomeImage/hp1.jpg';
-import hd1 from './HomeImage/hd1.jpg';
-
 import like from './comImage/like.png';
 import save from './comImage/save.png';
 
-// import si3 from './StoryImage/s3.jpg';
-// import si4 from './StoryImage/s4.jpg';
-// import si5 from './StoryImage/s5.jpg';
-// import si6 from './StoryImage/s6.jpg';
-// import si7 from './StoryImage/s7.jpg';
-// import si8 from './StoryImage/s8.jpg';
-// import si9 from './StoryImage/s9.jpg';
-// import si10 from './StoryImage/s10.jpg';
-// import si11 from './StoryImage/s11.jpg';
-// import si12 from './StoryImage/s12.jpg';
+import hp1 from './HomeImage/hp1.jpg';
+import hd1 from './HomeImage/hd1.jpg';
+import hp2 from './HomeImage/hp2.jpg';
+import hd2 from './HomeImage/hd2.jpg';
+import hp3 from './HomeImage/hp3.jpg';
+import hd3 from './HomeImage/hd3.jpg';
+import hp4 from './HomeImage/hp4.jpg';
+import hd4 from './HomeImage/hd4.jpg';
+import hp5 from './HomeImage/hp5.jpg';
+import hd5 from './HomeImage/hd5.jpg';
 
 class HomePostBlock extends Component {
   state = {
@@ -70,10 +67,15 @@ class HomePostBlock extends Component {
             <div className="content">
               <h6>{pdl.likes} likes</h6>
               <h5>
-                {pdl.username}
-                <span role="img"> {pdl.caption}</span>
+                <span id="user"> {pdl.username}</span>
+                <span id="caption" role="img">
+                  {pdl.caption}
+                </span>
                 <i id="i1" className="far fa-heart" />
               </h5>
+              {pdl.tag.map(t => (
+                <p id="p2">@{t}</p>
+              ))}
 
               <p id="p4">
                 {pdl.hastags1.map(has => (
@@ -90,8 +92,10 @@ class HomePostBlock extends Component {
 
               {pdl.comments.map(commenterlist => (
                 <h5>
-                  {commenterlist.username}
-                  <span role="img">{commenterlist.comment}</span>
+                  <span id="user">{commenterlist.username}</span>
+                  <span id="caption" role="img">
+                    {commenterlist.comment}
+                  </span>
                   <i className="far fa-heart" />
                 </h5>
               ))}
@@ -124,21 +128,19 @@ class HomePost extends Component {
           PostDetails={[
             {
               userpro: hd1,
-
               username: 'arunvijayno1',
               location: 'Tamilnadu, India',
               postImg: hp1,
               caption:
                 'Verified It s a wrap! The journey of MAFIA was amazing.',
-              noofcomments: 'View all 57 comments',
-
+              tag: [],
               hastags1: ['MAFIA ', 'action_movie', 'crime'],
               hastags2: [
                 'karthicknaren_M.',
                 'priyabhavanishankar',
                 'prasanna_actor '
               ],
-
+              noofcomments: 'View all 57 comments',
               likes: 2332,
               comments: [
                 {
@@ -148,7 +150,6 @@ class HomePost extends Component {
                   likes: 1,
                   replies: 1
                 },
-
                 {
                   username: 'speedshop_ming',
                   comment: 'This place is in my bucket list 😍',
@@ -158,6 +159,122 @@ class HomePost extends Component {
                 }
               ],
               postHour: 7
+            },
+            {
+              userpro: hd2,
+              username: 'arunvijayno1',
+              location: 'Tamilnadu, India',
+              postImg: hp2,
+              caption: 'Follow',
+              tag: [],
+              hastags1: [],
+              hastags2: ['vectordaily_ . '],
+              noofcomments: 'View all 122 comments',
+              likes: 1052,
+              comments: [
+                {
+                  username: 'mrju.yt',
+                  comment: 'Like my tree in the garden',
+                  commentHour: 6,
+                  likes: 1,
+                  replies: 1
+                },
+                {
+                  username: 'k_rohit_shikarwa',
+                  comment: 'Awesome work👏👏',
+                  commentHour: 6,
+                  likes: 2,
+                  replies: 3
+                }
+              ],
+              postHour: 6
+            },
+            {
+              userpro: hd3,
+              username: 'france_surya_fans',
+              location: '',
+              postImg: hp3,
+              caption: 'This fan made 🔥🔥 of ',
+              tag: [],
+              hastags1: ['sooraraiPottru', 'surya', 'suryafans'],
+              hastags2: ['surya_off'],
+              noofcomments: 'View all 307 comments',
+              likes: 1776,
+              comments: [
+                {
+                  username: 'boondavies',
+                  comment: '👏👏',
+                  commentHour: 6,
+                  likes: 1,
+                  replies: 1
+                },
+                {
+                  username: 'teem6us ',
+                  comment: 'Awesome work 💛💛',
+                  commentHour: 6,
+                  likes: 2,
+                  replies: 3
+                }
+              ],
+              postHour: 5
+            },
+            {
+              userpro: hd4,
+              username: 'bangalore_btp',
+              location: '',
+              postImg: hp4,
+              caption: 'Fan made Poster❤🔥 Follow',
+              tag: ['bangalore_btp'],
+              hastags1: ['Thalapathy64', 'MokkaPost'],
+              hastags2: ['ThalapathyVIJAY'],
+              noofcomments: 'View all 160 comments',
+              likes: 1202,
+              comments: [
+                {
+                  username: 'the_real_person_73',
+                  comment: 'Vjd dear comrade paa athu',
+                  commentHour: 6,
+                  likes: 1,
+                  replies: 1
+                },
+                {
+                  username: 'vi_jai_surya',
+                  comment: 'Vera level Bro 😈',
+                  commentHour: 6,
+                  likes: 2,
+                  replies: 3
+                }
+              ],
+              postHour: 10
+            },
+            {
+              userpro: hd5,
+              username: 'audi.page',
+              location: 'India',
+              postImg: hp5,
+              caption: 'Audi SQ8 or BMW X6 M50i 😍',
+              tag: ['spautomarinedetail', 'q8_nation'],
+              hastags1: ['automotive', 'horsepower', 'audilove'],
+              hastags2: ['.'],
+              noofcomments: 'View all 42 comments',
+              likes: 1052,
+              comments: [
+                {
+                  username: 'mrju.yt',
+                  comment: 'Like my tree in the garden',
+                  commentHour: 6,
+                  likes: 1,
+                  replies: 1
+                },
+                {
+                  username: 'k_rohit_shikarwa',
+                  comment: 'Awesome work👏👏',
+                  commentHour: 6,
+                  likes: 2,
+                  replies: 3
+                }
+              ],
+              postHour: 6
             }
           ]}
         />
