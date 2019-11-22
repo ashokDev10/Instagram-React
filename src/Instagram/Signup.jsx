@@ -6,29 +6,24 @@ import screen from './LogImage/screen.jpg';
 import apple from './LogImage/apple.png';
 import android from './LogImage/android.png';
 import title from './images2/title.png';
+import InstagramFooter from './InstagramFooter';
+const initialState = {
+  emailorMobile: '',
+  emailorMobileError: '',
+  name: '',
+  nameError: '',
+  userName: '',
+  userNameError: '',
+  password: '',
+  passwordError: ''
+};
 
 class Signup extends Component {
   render() {
     return (
       <div className="signup-page">
         <SignupBlock />
-        <div className="instagram-all-footer">
-          <ul>
-            <li>about us</li>
-            <li>Support</li>
-            <li>press</li>
-            <li>api</li>
-            <li>jobs</li>
-            <li>Privacy</li>
-            <li>terms</li>
-            <li>Directory</li>
-            <li>profiles</li>
-            <li>Hashtags</li>
-            <li>language</li>
-
-            <span>@ 2019 INSTAGRAM</span>
-          </ul>
-        </div>
+        <InstagramFooter />
       </div>
     );
   }
@@ -59,7 +54,19 @@ class SignupPhotoBlock extends Component {
   }
 }
 class SignupFormBlock extends Component {
+  state = initialState;
+
+  entereSignDetails = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  formSubmit = e => {
+    e.preventDefault();
+    console.log(this.state);
+  };
+
   render() {
+    const { emailorMobile, name, userName, password } = this.state;
     return (
       <div className="signup-form-block">
         <div className="signup-form">
@@ -72,27 +79,53 @@ class SignupFormBlock extends Component {
           <hr id="hr1" />
           <p id="p1">OR</p>
           <hr id="hr2" />
-          <ul>
-            <li>
-              <input type="text" placeholder="Mobile Number or Email" />
-            </li>
-            <li>
-              <input type="text" placeholder="Full Name" />
-            </li>
-            <li>
-              <input type="text" placeholder="Username" />
-            </li>
+          <form onSubmit={this.formSubmit}>
+            <ul>
+              <li>
+                <input
+                  name="emailorMobile"
+                  type="text"
+                  value={emailorMobile}
+                  placeholder="Mobile Number or Email"
+                  onChange={this.entereSignDetails}
+                />
+              </li>
+              <li>
+                <input
+                  name="name"
+                  type="text"
+                  value={name}
+                  placeholder="Full Name"
+                  onChange={this.entereSignDetails}
+                />
+              </li>
+              <li>
+                <input
+                  name="userName"
+                  type="text"
+                  value={userName}
+                  placeholder="Username"
+                  onChange={this.entereSignDetails}
+                />
+              </li>
 
-            <li>
-              <input type="text" placeholder="Password" />
-            </li>
-          </ul>
+              <li>
+                <input
+                  name="password"
+                  type="text"
+                  value={password}
+                  placeholder="Password"
+                  onChange={this.entereSignDetails}
+                />
+              </li>
+            </ul>
 
-          <Link to="/insta" style={{ textDecoration: 'none' }}>
-            <button type="button">
-              <span>Sign up</span>
-            </button>
-          </Link>
+            <Link to="/account/login/" style={{ textDecoration: 'none' }}>
+              <button type="submit">
+                <span>Sign up</span>
+              </button>
+            </Link>
+          </form>
           <h4>By signing up, you agree to our</h4>
           <h5>
             Terms , Data Policy <span>and</span> Cookies Policy .
