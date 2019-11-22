@@ -6,6 +6,13 @@ import apple from './LogImage/apple.png';
 import android from './LogImage/android.png';
 import title from './images2/title.png';
 
+// const initialState = {
+//   emailorMobile:'',
+//   emailorMobileError:'',
+//   password:'',
+//   passwordError:''
+// }
+
 class Login extends Component {
   render() {
     return (
@@ -26,7 +33,10 @@ class LoginBlock extends Component {
   }
 }
 
+
 class LoginFormBlock extends Component {
+// state=initialState;
+  
   render() {
     return (
       <div className="login-form-block">
@@ -34,7 +44,7 @@ class LoginFormBlock extends Component {
           <img src={title} alt="" />
           <ul>
             <li>
-              <input type="text" placeholder="Mobile Number or Email" />
+              <input type="text" placeholder="Mobile Number or Email"  />
             </li>
 
             <li>
