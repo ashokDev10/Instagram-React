@@ -1,5 +1,4 @@
 .signup-page {
-  height: 1000px;
   width: 1200px;
   margin: auto;
   .signup-block {
@@ -10,7 +9,7 @@
     .signup-form-block {
       .signup-form {
         margin-left: 10px;
-        height: 650px;
+
         width: 390px;
         text-align: center;
         border-radius: 2px;
@@ -73,6 +72,13 @@
               outline: none;
               padding: 0 0 0 10px;
             }
+            #p1 {
+              margin: 5px 0;
+
+              font-size: 16px;
+              opacity: 1;
+              color: red;
+            }
             input::placeholder {
               padding: 0;
               margin: 0;
@@ -86,7 +92,7 @@
           opacity: 0.4;
         }
         h5 {
-          margin: 0 80px;
+          margin: 0 80px 20px 80px;
           font-weight: bolder;
           font-size: 16px;
           opacity: 0.4;
