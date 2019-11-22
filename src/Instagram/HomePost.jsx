@@ -71,26 +71,23 @@ class HomePostBlock extends Component {
                 <span id="caption" role="img">
                   {pdl.caption}
                 </span>
-                <i id="i1" className="far fa-heart" />
+                <LikeButton />
               </h5>
               {pdl.tag.map(t => (
                 <p id="p2">@{t}</p>
               ))}
 
-              <p id="p4">
-                {pdl.hastags1.map(has => (
-                  <p id="p1">#{has}</p>
-                ))}
-              </p>
-              {pdl.hastags2.map(has => (
-                <p id="p2">@{has}</p>
+              {pdl.hastags1.map(has1 => (
+                <span id="p1">#{has1}</span>
               ))}
 
-              <Link
-                to="/insta/comment/"
-                commentlist={{ userpro: pdl.userpro}} 
-                style={{ textDecoration: 'none' }}
-              >
+              <p id="p4">
+                {pdl.hastags2.map(has2 => (
+                  <span id="p5">#{has2}</span>
+                ))}
+              </p>
+
+              <Link to="/insta/comment/" style={{ textDecoration: 'none' }}>
                 <h4>{pdl.noofcomments}</h4>
               </Link>
 
@@ -100,7 +97,7 @@ class HomePostBlock extends Component {
                   <span id="caption" role="img">
                     {commenterlist.comment}
                   </span>
-                  <i className="far fa-heart" />
+                  <LikeButton />
                 </h5>
               ))}
 
@@ -124,6 +121,31 @@ class HomePostBlock extends Component {
   }
 }
 
+class LikeButton extends Component {
+  state = {
+    liked: false
+  };
+
+  changeLike = () => this.setState(({ liked }) => ({ liked: !liked }));
+
+  render() {
+    const { liked } = this.state;
+    return (
+      <>
+        {/* <i
+          className={liked ? 'far fa-heart' : 'fas fa-heart'}
+          onClick={this.changeLike}
+        ></i> */}
+        {liked ? (
+          <i id="lik2" className="fa fa-heart" onClick={this.changeLike}></i>
+        ) : (
+          <i id="lik1" className="far fa-heart" onClick={this.changeLike}></i>
+        )}
+      </>
+    );
+  }
+}
+
 class HomePost extends Component {
   render() {
     return (
@@ -137,13 +159,13 @@ class HomePost extends Component {
               postImg: hp1,
               caption:
                 'Verified It s a wrap! The journey of MAFIA was amazing.',
-              tag: [],
-              hastags1: ['MAFIA ', 'action_movie', 'crime'],
-              hastags2: [
+              tag: [
                 'karthicknaren_M.',
                 'priyabhavanishankar',
                 'prasanna_actor '
               ],
+              hastags1: ['MAFIA ', 'action_movie', 'crime'],
+              hastags2: ['Thriller'],
               noofcomments: 'View all 57 comments',
               likes: 2332,
               comments: [
@@ -170,9 +192,9 @@ class HomePost extends Component {
               location: 'Tamilnadu, India',
               postImg: hp2,
               caption: 'Follow',
-              tag: [],
+              tag: ['vectordaily_ .'],
               hastags1: [],
-              hastags2: ['vectordaily_ . '],
+              hastags2: [''],
               noofcomments: 'View all 122 comments',
               likes: 1052,
               comments: [
@@ -199,9 +221,9 @@ class HomePost extends Component {
               location: '',
               postImg: hp3,
               caption: 'This fan made 🔥🔥 of ',
-              tag: [],
+              tag: ['surya_off'],
               hastags1: ['sooraraiPottru', 'surya', 'suryafans'],
-              hastags2: ['surya_off'],
+              hastags2: [],
               noofcomments: 'View all 307 comments',
               likes: 1776,
               comments: [
@@ -259,7 +281,7 @@ class HomePost extends Component {
               caption: 'Audi SQ8 or BMW X6 M50i 😍',
               tag: ['spautomarinedetail', 'q8_nation'],
               hastags1: ['automotive', 'horsepower', 'audilove'],
-              hastags2: ['.'],
+              hastags2: [],
               noofcomments: 'View all 42 comments',
               likes: 1052,
               comments: [
