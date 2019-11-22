@@ -82,7 +82,7 @@ class EditProfileBlockLeft extends Component {
           {editlist.map(el => (
             <Link to={el.link}>
               <ul>
-                <li style={{ textDecoration: 'none' }}>{el.text}</li>
+                <li>{el.text}</li>
               </ul>
             </Link>
           ))}
