@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Instagram.scss';
-import Post from './Post';
+
 import Footer from './Footer';
 import StoryPost from './StoryPost';
 // import DiscoverExplore from './DiscoverExplore';

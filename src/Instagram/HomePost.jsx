@@ -86,7 +86,11 @@ class HomePostBlock extends Component {
                 <p id="p2">@{has}</p>
               ))}
 
-              <Link to="/insta/comment/" style={{ textDecoration: 'none' }}>
+              <Link
+                to="/insta/comment/"
+                commentlist={{ userpro: pdl.userpro}} 
+                style={{ textDecoration: 'none' }}
+              >
                 <h4>{pdl.noofcomments}</h4>
               </Link>
 

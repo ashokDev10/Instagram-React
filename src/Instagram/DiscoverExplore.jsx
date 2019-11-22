@@ -94,7 +94,7 @@ class DiscoverBlock extends Component {
         ))}
 
         <div className="end-post">
-          <img src={sp5} alt="" />
+          <img src={si5} alt="" />
           <h5>i.m.pratikdabhi</h5>
           <p>Suggested for you'</p>
           <button>follow</button>
