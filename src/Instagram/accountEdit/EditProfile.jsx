@@ -9,8 +9,8 @@ import EmailsFromInsta from './EmailsFromInsta';
 import LoginActivity from './LoginActivity';
 import PrivacySecurity from './PrivacySecurity';
 
-import InstaHead from '../InstaHead';
-import InstagramFooter from '../InstagramFooter';
+import InstaHead from '../InstagramHead/InstaHead';
+import InstagramFooter from '../InstagramFooter/InstagramFooter';
 import { Switch, Route, Link } from 'react-router-dom';
 
 const edit = () => <EditProfileUser />;
