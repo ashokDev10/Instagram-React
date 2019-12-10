@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './IGTV.scss';
 
 import pi1 from './postImage/p1.jpg';
@@ -26,8 +26,7 @@ import pi22 from './postImage/p22.jpg';
 import pi23 from './postImage/p23.jpg';
 import pi24 from './postImage/p25.jpg';
 
-class IGTV extends Component {
-  render() {
+const IGTV =()=> {
     return (
       <div className="igtv-post">
         <div className="igtv-post-block">
@@ -207,11 +206,10 @@ class IGTV extends Component {
       </div>
     );
   }
-}
 
-class IGTVPost extends Component {
-  render() {
-    const { postlist } = this.props;
+
+const IGTVPost =({ postlist })=>{
+   
     return (
       <div className="container">
         {postlist.map(pi => (
@@ -231,6 +229,6 @@ class IGTVPost extends Component {
       </div>
     );
   }
-}
+
 
 export default IGTV;

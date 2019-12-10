@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Profile.scss';
 import Post from '../DiscoverExplore/ExplorePost';
 import IGTV from './IGTV';
@@ -222,112 +222,107 @@ const Igtv = () => <IGTV />;
 const Saved = () => <SavePost />;
 const Tagged = () => <TaggedPost />;
 
-class ProfileBlock extends Component {
-  render() {
-    return (
-      <div className="profile-block">
-        <div className="p-left">
-          <img src={pro} alt="" />
+const ProfileBlock = () => {
+  return (
+    <div className="profile-block">
+      <div className="p-left">
+        <img src={pro} alt="" />
+      </div>
+      <div className="p-right">
+        <h3>khrist_yohan</h3>
+        <div>
+          <Link to="/profile/edit" style={{ textDecoration: 'none' }}>
+            <small>Edit Profile</small>
+          </Link>
         </div>
-        <div className="p-right">
-          <h3>khrist_yohan</h3>
-          <div>
-            <Link to="/profile/edit" style={{ textDecoration: 'none' }}>
-              <small>Edit Profile</small>
-            </Link>
-          </div>
-          <img src={settings} alt="" />
+        <img src={settings} alt="" />
 
-          <p id="txt1">
-            <span>20</span>
-            <small> posts</small>
-            <span>240</span>
-            <small> followers</small>
-            <span>846</span>
-            <small> following</small>
-          </p>
-          <h4>KhrisT YohaN 🌹 👩‍❤️‍👩 </h4>
-          <p id="txt2">🎨 UX/UI Trends</p>
-          <p id="txt2">🛠️ Tools</p>
-          <p id="txt2">📕 Learning materials</p>
-          <p id="txt2">👩‍💻 Job opportunities</p>
-          <p id="txt2">💼 For sponsored content, like services</p>
-        </div>
+        <p id="txt1">
+          <span>20</span>
+          <small> posts</small>
+          <span>240</span>
+          <small> followers</small>
+          <span>846</span>
+          <small> following</small>
+        </p>
+        <h4>KhrisT YohaN 🌹 👩‍❤️‍👩 </h4>
+        <p id="txt2">🎨 UX/UI Trends</p>
+        <p id="txt2">🛠️ Tools</p>
+        <p id="txt2">📕 Learning materials</p>
+        <p id="txt2">👩‍💻 Job opportunities</p>
+        <p id="txt2">💼 For sponsored content, like services</p>
       </div>
-    );
-  }
-}
-class HighlightBlock extends Component {
-  render() {
-    return (
-      <div className="highlight-block">
-        <HighlightPost image={hi1} text="CAMARA" />
-        <HighlightPost image={hi2} text="Lightings" />
-        <HighlightPost image={hi3} text="Set Engin" />
-        <HighlightPost image={hi4} text="Heart Light" />
-        <HighlightPost image={hi5} text="Love" />
-        <HighlightPost image={hi6} text="TIMER" />
-        <HighlightPost image={hi7} text="RANGOLI" />
-      </div>
-    );
-  }
-}
-class HighlightPost extends Component {
-  render() {
-    const { image, text } = this.props;
-    return (
-      <div className="highlight-box">
-        <div className="highlight-post">
-          <div>
-            <img src={image} alt="" />
-          </div>
-          <p>{text}</p>
-        </div>
-      </div>
-    );
-  }
-}
-class PostBlock extends Component {
-  render() {
-    return (
-      <div className="post-block">
-        <div className="profile-post">
-          <ProfileGallery
-            list={[
-              {
-                photo: 'fas fa-th',
-                text: 'posts'
-              },
-              {
-                photo: 'fas fa-tv',
-                text: 'igtv'
-              },
-              {
-                photo: 'far fa-bookmark',
-                text: 'saved'
-              },
-              {
-                photo: 'fas fa-id-card',
-                text: 'tagged'
-              }
-            ]}
-          />
+    </div>
+  );
+};
 
-          <div className="profile-gallery">
-            <div className="profile-gallery-block">
-              <Switch>
-                <Route exact path="/insta/profile" component={Posts} />
-                <Route exact path="/insta/profile/igtv" component={Igtv} />
-                <Route exact path="/insta/profile/saved" component={Saved} />
-                <Route exact path="/insta/profile/tagged" component={Tagged} />
-              </Switch>
-            </div>
+const HighlightBlock = () => {
+  return (
+    <div className="highlight-block">
+      <HighlightPost image={hi1} text="CAMARA" />
+      <HighlightPost image={hi2} text="Lightings" />
+      <HighlightPost image={hi3} text="Set Engin" />
+      <HighlightPost image={hi4} text="Heart Light" />
+      <HighlightPost image={hi5} text="Love" />
+      <HighlightPost image={hi6} text="TIMER" />
+      <HighlightPost image={hi7} text="RANGOLI" />
+    </div>
+  );
+};
+
+const HighlightPost = ({ image, text }) => {
+  return (
+    <div className="highlight-box">
+      <div className="highlight-post">
+        <div>
+          <img src={image} alt="" />
+        </div>
+        <p>{text}</p>
+      </div>
+    </div>
+  );
+};
+
+const PostBlock = () => {
+  return (
+    <div className="post-block">
+      <div className="profile-post">
+        <ProfileGallery
+          list={[
+            {
+              photo: 'fas fa-th',
+              text: 'posts'
+            },
+            {
+              photo: 'fas fa-tv',
+              text: 'igtv'
+            },
+            {
+              photo: 'far fa-bookmark',
+              text: 'saved'
+            },
+            {
+              photo: 'fas fa-id-card',
+              text: 'tagged'
+            }
+          ]}
+        />
+
+        <div className="profile-gallery">
+          <div className="profile-gallery-block">
+            <Switch>
+              <Route exact path="/insta/profile" component={Posts} />
+              <Route exact path="/insta/profile/igtv" component={Igtv} />
+              <Route exact path="/insta/profile/saved" component={Saved} />
+              <Route exact path="/insta/profile/tagged" component={Tagged} />
+            </Switch>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
 const ProfileGallery = ({ list }) => (
   <div className="profile-gallery-head">
     <div></div>
@@ -347,19 +342,18 @@ const ProfileGallery = ({ list }) => (
   </div>
 );
 
-class ProfilePage extends Component {
-  render() {
-    return (
-      <div>
-        <InstaHead />
-        <div className="profile-page">
-          <ProfileBlock />
-          <HighlightBlock />
-          <PostBlock />
-        </div>
-        <InstagramFooter />
+const ProfilePage = () => {
+  return (
+    <div>
+      <InstaHead />
+      <div className="profile-page">
+        <ProfileBlock />
+        <HighlightBlock />
+        <PostBlock />
       </div>
-    );
-  }
-}
+      <InstagramFooter />
+    </div>
+  );
+};
+
 export default ProfilePage;
